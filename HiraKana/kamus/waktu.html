@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/kamus/waktu.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon"> 
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+  <title>Waktu</title>
+</head>
+
+<body style="background-color: #D8D9DA;">
+  
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li style="background: crimson; pointer-events: none;"><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="container">
+    <article>
+        <h2>Keterangan waktu</h2>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th rowspan="2" style="border-bottom: none;">Bahasa Indonesia</th>
+                <th colspan="3" style="border-bottom: none;">Bahasa Jepang</th>
+            </tr>
+            <tr>
+                <td style="background-color: crimson;">hirakana</td>
+                <td style="background-color: crimson;">katakana</td>
+                <td style="background-color: crimson;">di baca</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('sekarang', 'id-ID')">sekarang</td>
+                <td onclick="speakText('いま', 'ja-JP')">いま</td>
+                <td onclick="speakText('イマ', 'ja-JP')">イマ</td>
+                <td onclick="speakText('ima', 'ja-JP')">ima</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('akhir-akhir ini', 'id-ID')">akhir-akhir ini</td>
+                <td onclick="speakText('さいきん', 'ja-JP')">さいきん</td>
+                <td onclick="speakText('サイキン', 'ja-JP')">サイキン</td>
+                <td onclick="speakText('saikin', 'ja-JP')">saikin</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('waktu lalu', 'id-ID')">waktu lalu</td>
+                <td onclick="speakText('このあいだ', 'ja-JP')">このあいだ</td>
+                <td onclick="speakText('コノアイダ', 'ja-JP')"> コノアイダ</td>
+                <td onclick="speakText('kono aida', 'ja-JP')">kono aida</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('lain kali', 'id-ID')">lain kali</td>
+                <td onclick="speakText('こんど', 'ja-JP')">こんど</td>
+                <td onclick="speakText('コンド', 'ja-JP')">コンド</td>
+                <td onclick="speakText('kondo', 'ja-JP')">kondo</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('suatu saat nanti', 'id-ID')">suatu saat nanti</td>
+                <td onclick="speakText('いつか', 'ja-JP')">いつか</td>
+                <td onclick="speakText('イツカ', 'ja-JP')">イツカ</td>
+                <td onclick="speakText('itsuka', 'ja-JP')">itsuka</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('kapan saja', 'id-ID')">kapan saja</td>
+                <td onclick="speakText('いつでも', 'ja-JP')">いつでも</td>
+                <td onclick="speakText('イツデモ', 'ja-JP')">イツデモ</td>
+                <td onclick="speakText('itsudemo', 'ja-JP')">itsudemo</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('sebentar lagi', 'id-ID')">sebentar lagi</td>
+                <td onclick="speakText('もうすぐ', 'ja-JP')">もうすぐ</td>
+                <td onclick="speakText('モウスグ', 'ja-JP')">モウスグ</td>
+                <td onclick="speakText('mou sugu', 'ja-JP')">mou sugu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('tadi barusan', 'id-ID')">tadi/barusan</td>
+                <td onclick="speakText('さっき', 'ja-JP')">さっき</td>
+                <td onclick="speakText('サッキ', 'ja-JP')">サッキ</td>
+                <td onclick="speakText('sakki', 'ja-JP')">sakki</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('dulu', 'id-ID')">dulu</td>
+                <td onclick="speakText('むかし', 'ja-JP')">むかし</td>
+                <td onclick="speakText('ムカシ', 'ja-JP')">ムカシ</td>
+                <td onclick="speakText('mukashi', 'ja-JP')">mukashi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('masa depan', 'id-ID')">masa depan</td>
+                <td onclick="speakText('しょうらい', 'ja-JP')">しょうらい</td>
+                <td onclick="speakText('ショウライ', 'ja-JP')">ショウライ</td>
+                <td onclick="speakText('shourai', 'ja-JP')">shourai</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('awal', 'id-ID')">awal</td>
+                <td onclick="speakText('さいしょ', 'ja-JP')">さいしょ</td>
+                <td onclick="speakText('サイショ', 'ja-JP')">サイショ</td>
+                <td onclick="speakText('saisho', 'ja-JP')">saisho</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pertengahan', 'id-ID')">pertengahan</td>
+                <td onclick="speakText('さいちゅう', 'ja-JP')">さいちゅう</td>
+                <td onclick="speakText('サイチュウ', 'ja-JP')">サイチュウ</td>
+                <td onclick="speakText('saichuu', 'ja-JP')">saichuu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('akhir', 'id-ID')">akhir</td>
+                <td onclick="speakText('さいご', 'ja-JP')">さいご</td>
+                <td onclick="speakText('サイゴ', 'ja-JP')">サイゴ</td>
+                <td onclick="speakText('saigo', 'ja-JP')">saigo</td>
+            </tr>
+            </table>
+
+        <h2>Pukul (時 ji)</h2>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th rowspan="2" style="border-bottom: none;">Bahasa Indonesia</th>
+                <th colspan="3" style="border-bottom: none;">Bahasa Jepang</th>
+            </tr>
+            <tr>
+                <td style="background-color: crimson;">tulisan</td>
+                <td style="background-color: crimson;">dibaca</td>
+                <td style="background-color: crimson;">kata bantu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 1', 'id-ID')">pukul 1</td>
+                <td onclick="speakText('1時', 'ja-JP')">1時</td>
+                <td onclick="speakText('ichi', 'ja-JP')">ichi</td>
+                <td onclick="speakText('ji', 'ja-JP')" rowspan="12" style="text-align: center; "> Ji</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 2', 'id-ID')">pukul 2</td>
+                <td onclick="speakText('2時', 'ja-JP')">2時</td>
+                <td onclick="speakText('ni', 'ja-JP')">ni</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 3', 'id-ID')">pukul 3</td>
+                <td onclick="speakText('3時', 'ja-JP')">3時</td>
+                <td onclick="speakText('san', 'ja-JP')">san</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 4', 'id-ID')">pukul 4</td>
+                <td onclick="speakText('4時', 'ja-JP')">4時</td>
+                <td onclick="speakText('shi', 'ja-JP')">shi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 5', 'id-ID')">pukul 5</td>
+                <td onclick="speakText('5時', 'ja-JP')">5時</td>
+                <td onclick="speakText('go', 'ja-JP')">go</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 6', 'id-ID')">pukul 6</td>
+                <td onclick="speakText('6時', 'ja-JP')">6時</td>
+                <td onclick="speakText('roku', 'ja-JP')">roku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 7', 'id-ID')">pukul 7</td>
+                <td onclick="speakText('7時', 'ja-JP')">7時</td>
+                <td onclick="speakText('shichi', 'ja-JP')">shichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 8', 'id-ID')">pukul 8</td>
+                <td onclick="speakText('8時', 'ja-JP')">8時</td>
+                <td onclick="speakText('hachi', 'ja-JP')">hachi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 9', 'id-ID')">pukul 9</td>
+                <td onclick="speakText('9時', 'ja-JP')">9時</td>
+                <td onclick="speakText('ku', 'ja-JP')">ku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 10', 'id-ID')">pukul 10</td>
+                <td onclick="speakText('10時', 'ja-JP')">10時</td>
+                <td onclick="speakText('juu', 'ja-JP')">juu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 11', 'id-ID')">pukul 11</td>
+                <td onclick="speakText('11時', 'ja-JP')">11時</td>
+                <td onclick="speakText('juu-ichi', 'ja-JP')">juu-ichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('pukul 12', 'id-ID')">pukul 12</td>
+                <td onclick="speakText('12時', 'ja-JP')">12時</td>
+                <td onclick="speakText('juu-ni', 'ja-JP')">juu-ni</td>
+            </tr>
+        </table>                                                                    
+        <p style="padding-bottom: 40px;">untuk menanyakan waktu katakan : pukul berapa = 何時 (nan-ji) <br>
+        perhatikan pukul 4,7, dan 9, karena bacaan nya berbeda dari angka biasa. <br>
+        pukul 4 = yo-ji (bukan yon-ji) <br>
+        pukul 7 = shichi-ji (bukan nana-ji) <br>
+        pukul 9 = ku-ji (bukan kyuu-ji) 
+        </p>
+        <p>
+            午前(Gozen) dan 午後(Gogo) <br>
+        午前(Gozen) di letakan di depan bilangan untuk menunjukan A.M(pagi:0.00-11.59),
+        sedangkan 午後(Gogo) di gunakan untuk P.M (sore: 12.00-23.59).
+        </p>
+        <br><br>
+        <h3 style="margin-left: 5%;">Contoh</h3>
+        <p style="padding-bottom: 40px;">
+        午前1時 (gozen ichi ji)= 1.00 a.m = pukul 1 pagi <br>
+        午前10時 (gozen juu ji)= 10.00 a.m = pukul 10 pagi <br>
+        午後1時 (gogo ichi ji)= 1.00 p.m = pukul 1 Siang <br>
+        午後10時 (gogo juu ji)= 10.00 p.m = pukul 10 malam <br>
+        </p>
+
+        <h2>menit (分 Fun/Pun)</h2>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th rowspan="2" style="border-bottom: none;">Bahasa Indonesia</th>
+                <th colspan="3" style="border-bottom: none;">Bahasa Jepang</th>
+            </tr>
+            <tr>
+
+                <td style="background-color: crimson;">tulisan</td>
+                <td style="background-color: crimson;">dibaca</td>
+                <td style="background-color: crimson;">kata bantu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1 menit', 'id-ID')">1 menit</td>
+                <td onclick="speakText('1分', 'ja-JP')">1分</td>
+                <td onclick="speakText('ip', 'ja-JP')">ip</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('2 menit', 'id-ID')">2 menit</td>
+                <td onclick="speakText('2分', 'ja-JP')">2分</td>
+                <td onclick="speakText('ni', 'ja-JP')">ni</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('3 menit', 'id-ID')">3 menit</td>
+                <td onclick="speakText('3分', 'ja-JP')">3分</td>
+                <td onclick="speakText('san', 'ja-JP')">san</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('4 menit', 'id-ID')">4 menit</td>
+                <td onclick="speakText('4分', 'ja-JP')">4分</td>
+                <td onclick="speakText('yon', 'ja-JP')">yon</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('5 menit', 'id-ID')">5 menit</td>
+                <td onclick="speakText('5分', 'ja-JP')">5分</td>
+                <td onclick="speakText('go', 'ja-JP')">go</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('6 menit', 'id-ID')">6 menit</td>
+                <td onclick="speakText('6分', 'ja-JP')">6分</td>
+                <td onclick="speakText('rop', 'ja-JP')">rop</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('7 menit', 'id-ID')">7 menit</td>
+                <td onclick="speakText('7分', 'ja-JP')">7分</td>
+                <td onclick="speakText('nana', 'ja-JP')">nana</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('8 menit', 'id-ID')">8 menit</td>
+                <td onclick="speakText('8分', 'ja-JP')">8分</td>
+                <td onclick="speakText('hap', 'ja-JP')">hap</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('9 menit', 'id-ID')">9 menit</td>
+                <td onclick="speakText('9分', 'ja-JP')">9分</td>
+                <td onclick="speakText('kyuu', 'ja-JP')">kyuu</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('10 menit', 'id-ID')">10 menit</td>
+                <td onclick="speakText('10分', 'ja-JP')">10分</td>
+                <td onclick="speakText('jip, jup', 'ja-JP')">jip/jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('11 menit', 'id-ID')">11 menit</td>
+                <td onclick="speakText('11分', 'ja-JP')">11分</td>
+                <td onclick="speakText('juu-ip', 'ja-JP')">juu-ip</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('15 menit', 'id-ID')">15 menit</td>
+                <td onclick="speakText('15分', 'ja-JP')">15分</td>
+                <td onclick="speakText('juu-go', 'ja-JP')">juu-go</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('20 menit', 'id-ID')">20 menit</td>
+                <td onclick="speakText('20分', 'ja-JP')">20分</td>
+                <td onclick="speakText('ni-jip,ni-jup', 'ja-JP')">ni-jip<br>ni-jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('25 menit', 'id-ID')">25 menit</td>
+                <td onclick="speakText('25分', 'ja-JP')">25分</td>
+                <td onclick="speakText('ni-juu-go', 'ja-JP')">ni-juu-go</td>
+                <td onclick="speakText('fun', 'ja-JP')">fun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('30 menit', 'id-ID')">30 menit</td>
+                <td onclick="speakText('30分', 'ja-JP')">30分</td>
+                <td onclick="speakText('san-jip,san-jup', 'ja-JP')">san-jip<br>san-jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('40 menit', 'id-ID')">40 menit</td>
+                <td onclick="speakText('40分', 'ja-JP')">40分</td>
+                <td onclick="speakText('yon-jip, yon-jup', 'ja-JP')">yon-jip<br>yon-jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('50 menit', 'id-ID')">50 menit</td>
+                <td onclick="speakText('50分', 'ja-JP')">50分</td>
+                <td onclick="speakText('go-jip,go-jup', 'ja-JP')">go-jip<br>go-jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('60 menit', 'id-ID')">60 menit</td>
+                <td onclick="speakText('60分', 'ja-JP')">60分</td>
+                <td onclick="speakText('roku-jip,roku-jup', 'ja-JP')">roku-jip<br>roku-jup</td>
+                <td onclick="speakText('pun', 'ja-JP')">pun</td>
+            </tr>
+        </table>
+        <p style="padding-bottom: 40px;">berapa menit = 何分 (nan-pun) <br><br>
+        perhatikan angka 1,6,8,10,20,30,40,50, dan 60, karena bacaan bagian bilangan nya berbeda dengan angka biasa.
+        lalu, perhatikan juga angka 1,3,4,6,8,10,20,30,40,50, dan 60, karena di bubuhkan dengan kata bantu 
+        bilangan "pun", sedangkan 2,5,7 dan 9 dibubuhkan dengan kata bantu bilangan "fun". Tulisannya boleh menggunakan angka maupun kanji.
+        </p>
+        <h3 style="margin-left: 5%;">半(Han)</h3>
+        <p style="padding-bottom: 20px;">30 menit dapat di sebut "han" yang artinya setengah.</p>
+        <h3 style="margin-left: 5%;">Contoh</h3>
+        <p style="padding-bottom: 20px;">
+            10時半 ==> 10-ji han = 10.30 = juu-ji sanjip-pun = pukul setengah sebelas <br>
+            12時半 ==> 12-ji han = 12.30 = juu-ni-ji sanjip-pun = pukul setengah satu <br>
+        </p>
+
+        <h2>Detik (秒 byoo)</h2>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th rowspan="2" style="border-bottom: none;">Bahasa Indonesia</th>
+                <th colspan="3" style="border-bottom: none;">Bahasa Jepang</th>
+            </tr>
+            <tr>
+
+                <td style="background-color: crimson;">tulisan</td>
+                <td style="background-color: crimson;">dibaca</td>
+                <td style="background-color: crimson;">kata bantu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1 detik', 'id-ID')">1 detik</td>
+                <td onclick="speakText('1秒', 'ja-JP')">1秒</td>
+                <td onclick="speakText('ichi', 'ja-JP')">ichi</td>
+                <td onclick="speakText('byoo', 'ja-JP')" rowspan="11" style="text-align: center; "> Byoo</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('2 detik', 'id-ID')">2 detik</td>
+                <td onclick="speakText('2秒', 'ja-JP')">2秒</td>
+                <td onclick="speakText('ni', 'ja-JP')">ni</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('3 detik', 'id-ID')">3 detik</td>
+                <td onclick="speakText('3秒', 'ja-JP')">3秒</td>
+                <td onclick="speakText('san', 'ja-JP')">san</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('4 detik', 'id-ID')">4 detik</td>
+                <td onclick="speakText('4秒', 'ja-JP')">4秒</td>
+                <td onclick="speakText('yon', 'ja-JP')">yon</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('5 detik', 'id-ID')">5 detik</td>
+                <td onclick="speakText('5秒', 'ja-JP')">5秒</td>
+                <td onclick="speakText('go', 'ja-JP')">go</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('6 detik', 'id-ID')">6 detik</td>
+                <td onclick="speakText('6秒', 'ja-JP')">6秒</td>
+                <td onclick="speakText('roku', 'ja-JP')">roku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('7 detik', 'id-ID')">7 detik</td>
+                <td onclick="speakText('7秒', 'ja-JP')">7秒</td>
+                <td onclick="speakText('shichi, nana', 'ja-JP')">shichi<br>nana</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('8 detik', 'id-ID')">8 detik</td>
+                <td onclick="speakText('8秒', 'ja-JP')">8秒</td>
+                <td onclick="speakText('hachi', 'ja-JP')">hachi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('9 detik', 'id-ID')">9 detik</td>
+                <td onclick="speakText('9秒', 'ja-JP')">9秒</td>
+                <td onclick="speakText('kyuu', 'ja-JP')">kyuu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('10 detik', 'id-ID')">10 detik</td>
+                <td onclick="speakText('10秒', 'ja-JP')">10秒</td>
+                <td onclick="speakText('juu', 'ja-JP')">juu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('11 detik', 'id-ID')">11 detik</td>
+                <td onclick="speakText('11秒', 'ja-JP')">11秒</td>
+                <td onclick="speakText('juu-ichi', 'ja-JP')">juu-ichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('seterusnya', 'id-ID')" colspan="4" style="text-align: center;">seterus nya</td>
+            </tr>
+        </table>
+        <p style="padding-bottom: 40px;">berapa detik = 何秒 (nan-byoo) <br><br>
+        untuk membaca bilangan + kata bantu bilangan tidak sulit karena pembacaanya seperti angka biasa 
+        dan kata bantu bilangan pun tidak berubah. namun, perhatikan bilangan 4 dan 9. empat detik bukan 
+        "shi-byoo" tetapi "yon-byoo", dan sembiln detik bukan "ku-byoo" tetapi "kyuu-byoo".
+        </p>
+     </article>
+  </div> 
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('change', function() {
+      const slide = document.querySelector('.slide');
+      if (this.checked) {
+        slide.style.transform = 'translateX(0)';
+        slide.style.boxShadow = '0 0 15px rgba(0,0,0,.5)';
+      } else {
+        slide.style.transform = 'translateX(-180px)';
+        slide.style.boxShadow = 'none';
+      }
+    });
+
+    let speaking = false;
+
+    function speakText(text, lang) {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // Cek apakah synth sedang berbicara.
+        if (!speaking) {
+            synth.speak(utterance);
+
+            // Set speaking menjadi true saat synth sedang berbicara.
+            speaking = true;
+
+            // Setelah selesai berbicara, atur speaking menjadi false lagi.
+            utterance.onend = function () {
+                speaking = false;
+            };
+        }
+    }
+
+  </script>
+</body>
+</html>

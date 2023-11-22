@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/kamus/waktu.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon"> 
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+  <title>Angka</title>
+</head>
+
+<body style="background-color: #D8D9DA;">
+  
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li style="background: crimson; pointer-events: none;"><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="container">
+    <article>
+        <h2>satuan 0-10</h2>
+        <p>Angka dasar mulai dari 0 hingga 10 disajikan dalam bentuk kanji serta cara melafalkannya.</p>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>Angka</th>
+                <th>kanji</th>
+                <th>pembacaan</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('nol', 'id-ID')">0</td>
+                <td onclick="speakText('零', 'ja-JP')">零</td>
+                <td onclick="speakText('rei, ree, zero', 'ja-JP')">rei/ree/zero</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1', 'id-ID')">1</td>
+                <td onclick="speakText('一', 'ja-JP')">一</td>
+                <td onclick="speakText('1', 'ja-JP')">ichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('2', 'id-ID')">2</td>
+                <td onclick="speakText('二', 'ja-JP')">二</td>
+                <td onclick="speakText('2', 'ja-JP')">ni</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('3', 'id-ID')">3</td>
+                <td onclick="speakText('三', 'ja-JP')">三</td>
+                <td onclick="speakText('3', 'ja-JP')">san</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('4', 'id-ID')">4</td>
+                <td onclick="speakText('四', 'ja-JP')">四</td>
+                <td onclick="speakText('yon, shi', 'ja-JP')">yon/shi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('5', 'id-ID')">5</td>
+                <td onclick="speakText('五', 'ja-JP')">五</td>
+                <td onclick="speakText('5', 'ja-JP')">go</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('6', 'id-ID')">6</td>
+                <td onclick="speakText('六', 'ja-JP')">六</td>
+                <td onclick="speakText('6', 'ja-JP')">roku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('7', 'id-ID')">7</td>
+                <td onclick="speakText('七', 'ja-JP')">七</td>
+                <td onclick="speakText('7, shichi', 'ja-JP')">nana/shichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('8', 'id-ID')">8</td>
+                <td onclick="speakText('八', 'ja-JP')">八</td>
+                <td onclick="speakText('8', 'ja-JP')">hachi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('9', 'id-ID')">9</td>
+                <td onclick="speakText('九', 'ja-JP')">九</td>
+                <td onclick="speakText('kyuu, く', 'ja-JP')">kyuu/ku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('10', 'id-ID')">10</td>
+                <td onclick="speakText('十', 'ja-JP')">十</td>
+                <td onclick="speakText('10', 'ja-JP')">juu</td>
+            </tr>
+        </table>
+
+        <h2>belasan 11-20</h2>
+        <p>Untuk menulis angka belasan, angka 10 (juu) ditambah dengan angka dasar mulai dari 1-9. 
+        Misalnya pada angka 11, pengucapannya menjadi juu-ichi karena 10 (juu) ditambah dengan angka 1 (ichi).
+        Begitupun seterusnya.</p>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>Angka</th>
+                <th>kanji</th>
+                <th>pembacaan</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('11', 'id-ID')">11</td>
+                <td onclick="speakText('十一', 'ja-JP')">十一</td>
+                <td onclick="speakText('11', 'ja-JP')">juu-ichi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('12', 'id-ID')">12</td>
+                <td onclick="speakText('十二', 'ja-JP')">十二</td>
+                <td onclick="speakText('12', 'ja-JP')">juu-ni</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('13', 'id-ID')">13</td>
+                <td onclick="speakText('十三', 'ja-JP')">十三</td>
+                <td onclick="speakText('13', 'ja-JP')">juu-san</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('14', 'id-ID')">14</td>
+                <td onclick="speakText('十四', 'ja-JP')">十四</td>
+                <td onclick="speakText('14', 'ja-JP')">juu-yon</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('15', 'id-ID')">15</td>
+                <td onclick="speakText('十五', 'ja-JP')">十五</td>
+                <td onclick="speakText('15', 'ja-JP')">juu-go</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('16', 'id-ID')">16</td>
+                <td onclick="speakText('十六', 'ja-JP')">十六</td>
+                <td onclick="speakText('16', 'ja-JP')">juu-roku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('17', 'id-ID')">17</td>
+                <td onclick="speakText('十七', 'ja-JP')">十七</td>
+                <td onclick="speakText('17', 'ja-JP')">juu-nana</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('18', 'id-ID')">18</td>
+                <td onclick="speakText('十八', 'ja-JP')">十八</td>
+                <td onclick="speakText('18', 'ja-JP')">juu-hachi</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('19', 'id-ID')">19</td>
+                <td onclick="speakText('十九', 'ja-JP')">十九</td>
+                <td onclick="speakText('19', 'ja-JP')">juu-kyuu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('20', 'id-ID')">20</td>
+                <td onclick="speakText('二十', 'ja-JP')">二十</td>
+                <td onclick="speakText('20', 'ja-JP')">ni-juu</td>
+            </tr>
+            </table>
+
+        <h2>puluhan 20-100</h2>
+        <p>Sama halnya dengan penulisan angka 20. Metodenya dengan perkalian. 
+        Misalnya pada angka 30, prosesnya yaitu 3 (san) dikali dengan 10 (juu) hasilnya menjadi 30 (san-juu).</p>
+            <table border="1" style="margin-bottom: 20px;">
+                <tr>
+                    <th>Angka</th>
+                    <th>kanji</th>
+                    <th>pembacaan</th>
+                </tr>
+                <tr>
+                    <td onclick="speakText('20', 'id-ID')">20</td>
+                    <td onclick="speakText('20', 'ja-JP')">二十</td>
+                    <td onclick="speakText('20', 'ja-JP')">ni-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('30', 'id-ID')">30</td>
+                    <td onclick="speakText('30', 'ja-JP')">三十</td>
+                    <td onclick="speakText('30', 'ja-JP')">san-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('40', 'id-ID')">40</td>
+                    <td onclick="speakText('40', 'ja-JP')">四十</td>
+                    <td onclick="speakText('40', 'ja-JP')">yon-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('50', 'id-ID')">50</td>
+                    <td onclick="speakText('50', 'ja-JP')">五十</td>
+                    <td onclick="speakText('50', 'ja-JP')">go-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('60', 'id-ID')">60</td>
+                    <td onclick="speakText('60', 'ja-JP')">六十</td>
+                    <td onclick="speakText('60', 'ja-JP')">roku-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('70', 'id-ID')">70</td>
+                    <td onclick="speakText('70', 'ja-JP')">七十</td>
+                    <td onclick="speakText('70', 'ja-JP')">nana-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('80', 'id-ID')">80</td>
+                    <td onclick="speakText('80', 'ja-JP')">八十</td>
+                    <td onclick="speakText('80', 'ja-JP')">hachi-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('90', 'id-ID')">90</td>
+                    <td onclick="speakText('90', 'ja-JP')">九十</td>
+                    <td onclick="speakText('90', 'ja-JP')">kyuu-juu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('100', 'id-ID')">100</td>
+                    <td onclick="speakText('100', 'ja-JP')">百</td>
+                    <td onclick="speakText('100', 'ja-JP')">hyaku</td>
+                </tr>
+            </table>
+
+        <h2>ratusan 100-1000</h2>
+        <p>Misalnya, angka 200 berasal dari 2 (ni) dikali dengan 100 (hyaku) maka hasilnya menjadi 200 (ni-hyaku). 
+        Terdapat pengecualian dalam pelafalan untuk angka 300, 600, dan 800.</p>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>Angka</th>
+                <th>kanji</th>
+                <th>pembacaan</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('100', 'id-ID')">100</td>
+                <td onclick="speakText('100', 'ja-JP')">百</td>
+                <td onclick="speakText('100', 'ja-JP')">hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('200', 'id-ID')">200</td>
+                <td onclick="speakText('200', 'ja-JP')">二百</td>
+                <td onclick="speakText('200', 'ja-JP')">ni-hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('300', 'id-ID')">300</td>
+                <td onclick="speakText('300', 'ja-JP')">三百</td>
+                <td onclick="speakText('300', 'ja-JP')">san-byaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('400', 'id-ID')">400</td>
+                <td onclick="speakText('400', 'ja-JP')">四百</td>
+                <td onclick="speakText('400', 'ja-JP')">yon-hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('500', 'id-ID')">500</td>
+                <td onclick="speakText('500', 'ja-JP')">五百</td>
+                <td onclick="speakText('500', 'ja-JP')">go-hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('600', 'id-ID')">600</td>
+                <td onclick="speakText('600', 'ja-JP')">六百</td>
+                <td onclick="speakText('600', 'ja-JP')">rop-pyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('700', 'id-ID')">700</td>
+                <td onclick="speakText('700', 'ja-JP')">七百</td>
+                <td onclick="speakText('700', 'ja-JP')">nana-hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('800', 'id-ID')">800</td>
+                <td onclick="speakText('800', 'ja-JP')">八百</td>
+                <td onclick="speakText('800', 'ja-JP')">hap-pyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('900', 'id-ID')">900</td>
+                <td onclick="speakText('900', 'ja-JP')">九百</td>
+                <td onclick="speakText('900', 'ja-JP')">kyuu-hyaku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1000', 'id-ID')">1.000</td>
+                <td onclick="speakText('1000', 'ja-JP')">千</td>
+                <td onclick="speakText('1000', 'ja-JP')">sen</td>
+            </tr>
+        </table>
+
+        <h2>ribuan 1000-10000</h2>
+        <p>Misalnya, angka 2000 berasal dari angka 2 (ni) dikali dengan 1000 (sen) menjadi 2000 (ni-sen). 
+        Perbedaan pelafalan terdapat pada angka 3000, 8000, dan 10.000.</p>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>Angka</th>
+                <th>kanji</th>
+                <th>pembacaan</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('1000', 'id-ID')">1.000</td>
+                <td onclick="speakText('千', 'ja-JP')">千</td>
+                <td onclick="speakText('千', 'ja-JP')">sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('2000', 'id-ID')">2.000</td>
+                <td onclick="speakText('二千', 'ja-JP')">二千</td>
+                <td onclick="speakText('二千', 'ja-JP')">ni-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('3000', 'id-ID')">3.000</td>
+                <td onclick="speakText('三千', 'ja-JP')">三千</td>
+                <td onclick="speakText('三千', 'ja-JP')">san-zen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('4000', 'id-ID')">4.000</td>
+                <td onclick="speakText('四千', 'ja-JP')">四千</td>
+                <td onclick="speakText('四千', 'ja-JP')">yon-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('5000', 'id-ID')">5.000</td>
+                <td onclick="speakText('五千', 'ja-JP')">五千</td>
+                <td onclick="speakText('五千', 'ja-JP')">go-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('6000', 'id-ID')">6.000</td>
+                <td onclick="speakText('六千', 'ja-JP')">六千</td>
+                <td onclick="speakText('六千', 'ja-JP')">roku-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('7000', 'id-ID')">7.000</td>
+                <td onclick="speakText('七千', 'ja-JP')">七千</td>
+                <td onclick="speakText('七千', 'ja-JP')">nana-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('8000', 'id-ID')">8.000</td>
+                <td onclick="speakText('八千', 'ja-JP')">八千</td>
+                <td onclick="speakText('八千', 'ja-JP')">has-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('9000', 'id-ID')">9.000</td>
+                <td onclick="speakText('九千', 'ja-JP')">九千</td>
+                <td onclick="speakText('九千', 'ja-JP')">kyuu-sen</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('10000', 'id-ID')">10.000</td>
+                <td onclick="speakText('一万', 'ja-JP')">一万</td>
+                <td onclick="speakText('一万', 'ja-JP')">ichi-man</td>
+            </tr>
+        </table>
+
+        <h2>angka lebih dari 10.000</h2>
+        <p>Angka yang lebih  besar dibanding 10.000 memiliki ciri khas, yaitu penggunaan man dan oku. Berikut jenisnya.</p>
+        <table border="1" style="margin-bottom: 40px;">
+            <tr>
+                <th>Angka</th>
+                <th>kanji</th>
+                <th>pembacaan</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('100000', 'id-ID')">100.000</td>
+                <td onclick="speakText('十万', 'ja-JP')">十万</td>
+                <td onclick="speakText('十万', 'ja-JP')">juu-man</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1000000', 'id-ID')">1.000.000</td>
+                <td onclick="speakText('百万', 'ja-JP')">百万</td>
+                <td onclick="speakText('百万', 'ja-JP')">hyaku-man</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('10000000', 'id-ID')">10.000.000</td>
+                <td onclick="speakText('千万', 'ja-JP')">千万</td>
+                <td onclick="speakText('千万', 'ja-JP')">sen-man</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('100000000', 'id-ID')">100.000.000</td>
+                <td onclick="speakText('億', 'ja-JP')">億</td>
+                <td onclick="speakText('億', 'ja-JP')">oku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1000000000', 'id-ID')">1 Miliar</td>
+                <td onclick="speakText('十億', 'ja-JP')">十億</td>
+                <td onclick="speakText('十億', 'ja-JP')">juu-oku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('1000000000000', 'id-ID')">1 Triliun</td>
+                <td onclick="speakText('兆', 'ja-JP')">兆</td>
+                <td onclick="speakText('兆', 'ja-JP')">chou</td>
+            </tr>
+        </table>
+     </article>
+  </div> 
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('change', function() {
+      const slide = document.querySelector('.slide');
+      if (this.checked) {
+        slide.style.transform = 'translateX(0)';
+        slide.style.boxShadow = '0 0 15px rgba(0,0,0,.5)';
+      } else {
+        slide.style.transform = 'translateX(-180px)';
+        slide.style.boxShadow = 'none';
+      }
+    });
+
+    let speaking = false;
+
+    function speakText(text, lang) {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // Cek apakah synth sedang berbicara.
+        if (!speaking) {
+            synth.speak(utterance);
+
+            // Set speaking menjadi true saat synth sedang berbicara.
+            speaking = true;
+
+            // Setelah selesai berbicara, atur speaking menjadi false lagi.
+            utterance.onend = function () {
+                speaking = false;
+            };
+        }
+    }
+
+  </script>
+</body>
+</html>

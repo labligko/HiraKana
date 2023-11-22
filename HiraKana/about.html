@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>About HiraKana</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+    <link href="/gambar/hirakana full.png" rel="shortcut icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+.slide{
+ height: 100%;
+ width: 180px;
+ margin-top: -1px;
+ position: absolute;
+ background-color: #272829;
+ transition: .5s ease;
+ transform: translateX(-180px);
+ overflow-y: hidden;
+ z-index: 2;
+}
+h1{
+  color: crimson;
+  font-weight: 800;
+  text-align: right;
+  padding: 10px 0;
+  padding-right: 30px;
+  pointer-events: none;
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  color: white;
+  font-weight: 500;
+  padding: 10px 10px ;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .2s ease-out;
+}
+ul li:hover a{
+  background-color: crimson;
+}
+ul li a i{
+  width: 40px;
+  text-align: center;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5em;
+  padding: 30px;
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+.firstname {
+  color: white;
+  font-weight: 700;
+}
+.lastname {
+  color: crimson;
+  font-weight: 400;
+}
+input{
+  display: none;
+  visibility: hidden;
+  appearance: none;
+}
+.toggle{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 15px;
+  left: 10px;
+  z-index: 3;
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #4c5258;
+  box-shadow: 0 0 5px rgba(112, 107, 107, 0.3);
+}
+.toggle .common{
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: crimson;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+.toggle .top_line{
+  top: 30%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}
+.toggle .middle_line{
+  top: 50%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}
+.toggle .bottom_line{
+  top: 70%;
+  left: 20%;
+  transform: translate(-50% -50%);
+}
+input:checked ~ .toggle .top_line{
+  left: 2px;
+  top: 14px;
+  width: 25px; 
+  transform: rotate(45deg);
+}
+input:checked ~ .toggle .middle_line{
+  opacity: 0;
+  transform: translateX(20px);
+}
+input:checked ~ .toggle .bottom_line{
+  left: 2px;
+  top: 14px;
+  width: 25px; 
+  transform: rotate(-45deg);
+}
+input:checked ~ .slide{
+  transform: translateX(0);
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+.container{
+	width: 100%;
+	display: block;
+	margin:auto;
+  margin-top: 50px;
+  margin-left: 5%;
+	padding-top: 100px;
+  background-color: #D8D9DA;
+}
+.container .title{
+    position: absolute;
+    top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 70%;
+	height: auto;
+    background-color: #565252;
+    border-radius: 20%;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#000000;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .social-media{
+	margin: 40px 100px;
+    margin-top: 100px;
+    color: #272829;
+}
+.content-section .social-media a{
+	display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #3d3d3d;
+    transition: all 0.5s ease;
+}
+.content-section .social-media a:hover{
+    color: crimson;
+    background-color: rgba(236, 236, 236, 0.8);
+}
+@media(max-width: 767px){
+body{
+    overflow-y: hidden;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+  }
+
+  .content-section, .image-section {
+    width: 100%;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-section .title {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+    </style>
+</head>
+<body>
+
+    <label>
+        <input type="checkbox" id="menuToggle">
+        <div class="toggle" for="menuToggle">
+          <span class="top_line common"></span>
+          <span class="middle_line common"></span>
+          <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+          <h1>MENU</h1>
+          <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+            <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+            <li><a href="Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+            <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+            <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+            <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+            <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+            <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+            <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+            <li style="background: crimson; pointer-events: none;"><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+          </ul>
+          <div class="brand">
+            <div class="firstname">hira</div>
+            <div class="lastname">kana</div>
+          </div>
+        </div>
+      </label>
+    
+<div class="section">
+    <div class="container">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+        <div class="image-section">
+            <img src="./gambar/with text.png">
+        </div>
+        <div class="content-section">
+            
+          <div class="content">
+            <h3>Website HiraKana</h3>
+            <p>
+                HiraKana adalah sebuah situs web yang didedikasikan untuk mempelajari bahasa Jepang, terutama "Hiragana" dan "Katakana". Situs web ini dibuat oleh seorang siswa kelas 11 dengan tujuan membantu orang lain yang tertarik untuk belajar bahasa Jepang. Kami selalu berusaha untuk meningkatkan kualitas situs web ini dan sangat menghargai setiap kritik dan saran yang Anda berikan melalui halaman Kontak kami.
+                <br><br>
+                Terhubung dengan kami melalui media sosial:
+            </p>
+        </div>
+        
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61550990181100&mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/hirakana_official?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a> 
+        </div>
+        
+        
+    </div>
+</div>
+
+
+</body>
+</html>

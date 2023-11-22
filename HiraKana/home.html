@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/home.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon"> 
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+  <title>Main Menu</title>
+</head>
+
+<body style="background-color: #D8D9DA;">
+  
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li style="background: crimson; pointer-events: none;"><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  
+  <div class="container">
+    <article>
+      <h2>HiraKana</h2>
+      <p class="description">
+        Untuk pemula yang baru belajar bahasa Jepang untuk pertama kali, bahasa Jepang terlihat sangat menakutkan. Selain cara penulisan yang berbeda, ada sejumlah istilah baru seperti hiragana dan katakana.
+        Nah, buat teman-teman yang baru mau coba belajar bahasa Jepang, jangan khawatir deh! Meskipun awalnya terlihat agak rumit, tapi kita bisa bikin seru kok. Yuk, kita jelajahi bahasa Jepang bareng dengan penuh semangat! <br><br>
+       </p>
+      <p class="description">
+        Jadi, di bahasa Jepang, ada tiga jenis huruf keren: Hiragana, Katakana, dan Kanji. Hiragana dan Katakana itu kayak simbol aja buat bunyi kata-kata. Tiap hurufnya tuh kayak bocoran suara kata itu. Terus, Kanji itu kayak gambar yang ceritain arti kata. Tapi tenang aja, kita mulai dari yang gampang dulu yaitu Hiragana, trus baru lanjut ke Katakana.
+        Nah, kita bisa mulai petualangan seru ini dengan klik ikon "Hiragana" di menu. Siap-siap ya, belajar sambil main itu asik! 
+      </p>
+     </article>
+  </div> 
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('change', function() {
+      const slide = document.querySelector('.slide');
+      if (this.checked) {
+        slide.style.transform = 'translateX(0)';
+        slide.style.boxShadow = '0 0 15px rgba(0,0,0,.5)';
+      } else {
+        slide.style.transform = 'translateX(-180px)';
+        slide.style.boxShadow = 'none';
+      }
+    });
+
+  </script>
+</body>
+</html>

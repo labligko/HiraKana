@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bahasa/style.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+    <script src="/bahasa/kscript.js"></script>
+  <title>Katakana</title>
+</head>
+
+<body style="background-color: #D8D9DA;">
+ 
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li style="background: crimson; pointer-events: none;"><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="container">
+    <article>
+      <h2>Katakana</h2>
+      <p class="description">
+        Katakana adalah salah satu daripada tiga cara penulisan bahasa Jepang. Katakana biasanya digunakan untuk menuliskan "Onomatope" dan kata-kata asli bahasa Jepang, hal ini hanya bersifat penegasan saja.<br><br>
+        Fungsi huruf Katakana adalah untuk: <br>
+        •	Penulisan kata-kata yag berasal dari bahasa asing yang sudah diserap ke dalam bahasa Jepang atau yang disebut dengan 外来語/gairaigo. <br>
+        •	Sebagai kata penekakan, semacam huruf kapital dalam penulisan huruf romawi. <br>
+        •	Mewakili kata yang menirukan bunyi atau perasaan (onomatopoeia). <br>
+        •	Penulisan kata teknik atau ilmiah. <br>
+        •	Biasanya juga digunakan untuk penulisan nama perusahaan di Jepang. <br>
+        <br>
+        Berikut adalah huruf-huruf katakana yang akan di pelajari:
+        </p>
+
+      <div class="btn">
+      <button onclick="showImage('../gambar/katakana/A katakana.png')"><h1>ア</h1>A</button>
+      <button onclick="showImage('../gambar/katakana/I katakana.png')"><h1>イ</h1>I</button>
+      <button onclick="showImage('../gambar/katakana/U katakana.png')"><h1>ウ</h1>U</button>
+      <button onclick="showImage('../gambar/katakana/E katakana.png')"><h1>エ</h1>E</button>
+      <button onclick="showImage('../gambar/katakana/O katakana.png')"><h1>オ</h1>O</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ka katakana.png')"><h1>カ</h1>Ka</button>
+      <button onclick="showImage('../gambar/katakana/Ki katakana.png')"><h1>キ</h1>Ki</button>
+      <button onclick="showImage('../gambar/katakana/Ku katakana.png')"><h1>ク</h1>Ku</button>
+      <button onclick="showImage('../gambar/katakana/Ke katakana.png')"><h1>ケ</h1>Ke</button>
+      <button onclick="showImage('../gambar/katakana/Ko katakana.png')"><h1>コ</h1>Ko</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Sa katakana.png')"><h1>サ</h1>Sa</button>
+      <button onclick="showImage('../gambar/katakana/Shi katakana.png')"><h1>シ</h1>Shi</button>
+      <button onclick="showImage('../gambar/katakana/Su katakana.png')"><h1>ス</h1>Su</button>
+      <button onclick="showImage('../gambar/katakana/Se katakana.png')"><h1>セ</h1>Se</button>
+      <button onclick="showImage('../gambar/katakana/So katakana.png')"><h1>ソ</h1>So</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ta katakana.png')"><h1>タ</h1>Ta</button>
+      <button onclick="showImage('../gambar/katakana/Chi katakana.png')"><h1>チ</h1>Chi</button>
+      <button onclick="showImage('../gambar/katakana/Tsu katakana.png')"><h1>ツ</h1>Tsu</button>
+      <button onclick="showImage('../gambar/katakana/Te katakana.png')"><h1>テ</h1>Te</button>
+      <button onclick="showImage('../gambar/katakana/To katakana.png')"><h1>ト</h1>To</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Na katakana.png')"><h1>ナ</h1>Na</button>
+      <button onclick="showImage('../gambar/katakana/Ni katakana.png')"><h1>ニ</h1>Ni</button>
+      <button onclick="showImage('../gambar/katakana/Nu katakana.png')"><h1>ヌ</h1>Nu</button>
+      <button onclick="showImage('../gambar/katakana/Ne katakana.png')"><h1>ネ</h1>Ne</button>
+      <button onclick="showImage('../gambar/katakana/No katakana.png')"><h1>ノ</h1>No</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ha katakana.png')"><h1>ハ</h1>Ha</button>
+      <button onclick="showImage('../gambar/katakana/Hi katakana.png')"><h1>ヒ</h1>Hi</button>
+      <button onclick="showImage('../gambar/katakana/Fu katakana.png')"><h1>フ</h1>Fu</button>
+      <button onclick="showImage('../gambar/katakana/He katakana.png')"><h1>ヘ</h1>He</button>
+      <button onclick="showImage('../gambar/katakana/Ho katakana.png')"><h1>ホ</h1>Ho</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ma katakana.png')"><h1>マ</h1>Ma</button>
+      <button onclick="showImage('../gambar/katakana/Mi katakana.png')"><h1>ミ</h1>Mi</button>
+      <button onclick="showImage('../gambar/katakana/Mu katakana.png')"><h1>ム</h1>Mu</button>
+      <button onclick="showImage('../gambar/katakana/Me katakana.png')"><h1>メ</h1>Me</button>
+      <button onclick="showImage('../gambar/katakana/Mo katakana.png')"><h1>モ</h1>Mo</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ya katakana.png')"><h1>ヤ</h1>Ya</button>
+      <button onclick="showImage('../gambar/katakana/Yu katakana.png')" class="sbtn"><h1>ユ</h1>Yu</button>
+      <button onclick="showImage('../gambar/katakana/Yo katakana.png')" class="sbtn"><h1>ヨ</h1>Yo</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Ra katakana.png')"><h1>ラ</h1>Ra</button>
+      <button onclick="showImage('../gambar/katakana/Ri katakana.png')"><h1>リ</h1>Ri</button>
+      <button onclick="showImage('../gambar/katakana/Ru katakana.png')"><h1>ル</h1>Ru</button>
+      <button onclick="showImage('../gambar/katakana/Re katakana.png')"><h1>レ</h1>Re</button>
+      <button onclick="showImage('../gambar/katakana/Ro katakana.png')"><h1>ロ</h1>Ro</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/katakana/Wa katakana.png')"><h1>ワ</h1>Wa</button>
+      <button onclick="showImage('../gambar/katakana/Wo katakana.png')" class="sbtn"><h1>ヲ</h1>Wo</button>
+      <button onclick="showImage('../gambar/katakana/N katakana.png')" class="sbtn"><h1>ン</h1>N</button>
+      <br>
+      </div>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas cara penulisan dan pelafalan huruf katakana
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/katakana.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+      
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()"> &times; </span>
+        <img id="modalImage" class="modal-content">
+        <button class="sound" onclick="jalankanlagu()"><h1>🔊</h1></button>
+        <audio src="" style="display: none;" id="aud_io">
+          <source>
+        </audio>
+      </div>
+
+      <h2>Katakana Dakuon</h2>
+      <p class="description">
+        Katakana dakuon adalah katakana dasar yang diberi tambahan tanda seperti tanda kutip ( ” ) di sebelah kanan atas. Tanda tambahan pada katakana dakuon disebut dakuten atau tenten. Fungsinya untuk menebalkan bunyi. Hal yang penting untuk diingat, tidak semua katakana dasar dapat ditambahkan dakuten atau tenten ya!<br> 
+      </p>
+
+      <div class="btn">
+        <button onclick="playAudio('audio_ga')"><h1>ガ</h1>Ga</button>
+        <audio id="audio_ga" controls style="display: none;">
+          <source src="../bahasa/audio/Ga.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_gi')"><h1>ギ</h1>Gi</button>
+        <audio id="audio_gi" controls style="display: none;">
+          <source src="../bahasa/audio/Gi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_gu')"><h1>グ</h1>Gu</button>
+        <audio id="audio_gu" controls style="display: none;">
+          <source src="../bahasa/audio/Gu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_ge')"><h1>ゲ</h1>Ge</button>
+        <audio id="audio_ge" controls style="display: none;">
+          <source src="../bahasa/audio/Ge.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_go')"><h1>ゴ</h1>Go</button>
+        <audio id="audio_go" controls style="display: none;">
+          <source src="../bahasa/audio/Go.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br><br><br><br>
+  
+        <button onclick="playAudio('audio_za')"><h1>ザ</h1>Za</button>
+        <audio id="audio_za" controls style="display: none;">
+          <source src="../bahasa/audio/Za.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_ji')"><h1>ジ</h1>Ji</button>
+        <audio id="audio_ji" controls style="display: none;">
+          <source src="../bahasa/audio/Ji.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_zu')"><h1>ズ</h1>Zu</button>
+        <audio id="audio_zu" controls style="display: none;">
+          <source src="../bahasa/audio/Zu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_ze')"><h1>ゼ</h1>Ze</button>
+        <audio id="audio_ze" controls style="display: none;">
+          <source src="../bahasa/audio/Ze.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_zo')"><h1>ゾ</h1>Zo</button>
+        <audio id="audio_zo" controls style="display: none;">
+          <source src="../bahasa/audio/Zo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br><br><br><br>
+  
+        <button onclick="playAudio('audio_da')"><h1>ダ</h1>Da</button>
+        <audio id="audio_da" controls style="display: none;">
+          <source src="../bahasa/audio/Da.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_ji')"><h1>ヂ</h1>Ji</button>
+        <button onclick="playAudio('audio_zu')"><h1>ヅ</h1>Zu</button>
+        <button onclick="playAudio('audio_de')"><h1>デ</h1>De</button>
+        <audio id="audio_de" controls style="display: none;">
+          <source src="../bahasa/audio/De.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_do')"><h1>ド</h1>Do</button>
+        <audio id="audio_do" controls style="display: none;">
+          <source src="../bahasa/audio/Do.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br><br><br><br>
+  
+        <button onclick="playAudio('audio_ba')"><h1>バ</h1>Ba</button>
+        <audio id="audio_ba" controls style="display: none;">
+          <source src="../bahasa/audio/Ba.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_bi')"><h1>ビ</h1>Bi</button>
+        <audio id="audio_bi" controls style="display: none;">
+          <source src="../bahasa/audio/Bi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_bu')"><h1>ブ</h1>Bu</button>
+        <audio id="audio_bu" controls style="display: none;">
+          <source src="../bahasa/audio/Bu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_be')"><h1>ベ</h1>Be</button>
+        <audio id="audio_be" controls style="display: none;">
+          <source src="../bahasa/audio/Be.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+  
+        <button onclick="playAudio('audio_bo')"><h1>ボ</h1>Bo</button>
+        <audio id="audio_bo" controls style="display: none;">
+          <source src="../bahasa/audio/Bo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      <br>
+      </div>
+
+      <h2>Katakana Handakuon</h2>
+      <p class="description">
+        Katakana handakuon adalah katakana dasar yang beri tambahan tanda seperti bulatan kecil ( ゜) atau dalam bahasa Jepangnya disebut handakuten atau maru. Katakana dakuon hanya berjumlah 5 huruf saja. <br>
+      </p>
+
+      <div class="btn">
+        <button onclick="playAudio('audio_pa')"><h1>パ</h1>pa</button>
+        <audio id="audio_pa" controls style="display: none;">
+          <source src="../bahasa/audio/Pa.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pi')"><h1>ピ</h1>pi</button>
+        <audio id="audio_pi" controls style="display: none;">
+          <source src="../bahasa/audio/Pi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pu')"><h1>プ</h1>pu</button>
+        <audio id="audio_pu" controls style="display: none;">
+          <source src="../bahasa/audio/Pu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pe')"><h1>ぺ</h1>pe</button>
+        <audio id="audio_pe" controls style="display: none;">
+          <source src="../bahasa/audio/Pe.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_po')"><h1>ポ</h1>po</button>
+        <audio id="audio_po" controls style="display: none;">
+          <source src="../bahasa/audio/Po.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      <br>
+      </div>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas penulisan dan pelafalan katakana dakuon dan katakana handakuon.
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/katakana_dakuon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+
+      <h2>Katakana Yauon</h2>
+      <p class="description">
+        Katakana youon adalah katakana dasar pada kolom “i” (misalnya: ki, shi, chi, ni )  yang diberi tambahan huruf ャ(ya)、ュ(yu), ョ(yo) kecil. Sama seperti hiragana youon, bunyi katakana youon terdengar mendayu-dayu. <br>
+      </p>
+
+      <ul>
+        <button onclick="playAudio('audio_kya')"><h1>キャ</h1>Kya</button>
+        <audio id="audio_kya" controls style="display: none;">
+          <source src="../bahasa/audio/Kya.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_kyu')"><h1>キュ</h1>Kyu</button>
+        <audio id="audio_kyu" controls style="display: none;">
+          <source src="../bahasa/audio/Kyu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_kyo')"><h1>キョ</h1>Kyo</button>
+        <audio id="audio_kyo" controls style="display: none;">
+          <source src="../bahasa/audio/Kyo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio> 
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_sha')"><h1>シャ</h1>Sha</button>
+        <audio id="audio_sha" controls style="display: none;">
+          <source src="../bahasa/audio/Sha.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_shu')"><h1>シュ</h1>Shu</button>
+        <audio id="audio_shu" controls style="display: none;">
+          <source src="../bahasa/audio/Shu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_sho')"><h1>ショ</h1>Sho</button>
+        <audio id="audio_sho" controls style="display: none;">
+          <source src="../bahasa/audio/Sho.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio> 
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_cha')"><h1>チャ</h1>Cha</button>
+        <audio id="audio_cha" controls style="display: none;">
+          <source src="../bahasa/audio/Cha.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_chu')"><h1>チュ</h1>Chu</button>
+        <audio id="audio_chu" controls style="display: none;">
+          <source src="../bahasa/audio/Chu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_cho')"><h1>チョ</h1>Cho</button>
+        <audio id="audio_cho" controls style="display: none;">
+          <source src="../bahasa/audio/Cho.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_nya')"><h1>二ャ</h1>Nya</button>
+        <audio id="audio_nya" controls style="display: none;">
+          <source src="../bahasa/audio/Nya.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_nyu')"><h1>二ュ</h1>Nyu</button>
+        <audio id="audio_nyu" controls style="display: none;">
+          <source src="../bahasa/audio/Nyu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_nyo')"><h1>ニョ</h1>Nyo</button>
+        <audio id="audio_nyo" controls style="display: none;">
+          <source src="../bahasa/audio/Nyo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_hya')"><h1>ヒャ</h1>Hya</button>
+        <audio id="audio_hya" controls style="display: none;">
+          <source src="../bahasa/audio/Hya.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_hyu')"><h1>ヒュ</h1>Hyu</button>
+        <audio id="audio_hyu" controls style="display: none;">
+          <source src="../bahasa/audio/Hyu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_hyo')"><h1>ヒョ</h1>Hyo</button>
+        <audio id="audio_hyo" controls style="display: none;">
+          <source src="../bahasa/audio/Hyo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_mya')"><h1>ミャ</h1>Mya</button>
+        <audio id="audio_mya" controls style="display: none;">
+          <source src="../bahasa/audio/Mya.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_myu')"><h1>ミュ</h1>Myu</button>
+        <audio id="audio_myu" controls style="display: none;">
+          <source src="../bahasa/audio/Myu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_myo')"><h1>ミョ</h1>Myo</button>
+        <audio id="audio_myo" controls style="display: none;">
+          <source src="../bahasa/audio/Myo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <br><br><br><br>
+        <button onclick="playAudio('audio_rya')"><h1>リャ</h1>Rya</button>
+        <audio id="audio_rya" controls style="display: none;">
+          <source src="../bahasa/audio/Rya.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_ryu')"><h1>リュ</h1>Ryu</button>
+        <audio id="audio_ryu" controls style="display: none;">
+          <source src="../bahasa/audio/Ryu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_ryo')"><h1>リョ</h1>Ryo</button>
+        <audio id="audio_ryo" controls style="display: none;">
+          <source src="../bahasa/audio/Ryo.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <br>
+      </ul>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas penulisan dan pelafalan katakana youon.
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/katakana_youon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+
+      <h2>Katakana Sokuon</h2>
+      <p class="description">
+        Katakana sokuon ditandai dengan penambahan huruf ッ (tsu) kecil di depan huruf konsonan. Huruf ッkecil berfungsi untuk menggandakan huruf konsonan yang ada di depannya. <br><br>
+        Contoh: <br>
+        サッカー (saKKaa) : sepak bola <br>
+        ポケット (pokeTTo) : saku <br>
+        チケット (chikeTTo) : tiket <br><br>
+      </p>
+
+      <h2>Katakana Chouon</h2>
+      <p class="description">
+        Chouon 「長音」artinya bunyi panjang. Berbeda dengan hiragana chouon, bunyi vokal panjang pada katakana ditandai dengan garis  panjang 「ー」. <br><br>
+        Contoh: <br>
+        ケーキ (keeki) : kue <br>
+        スカート (sukaato) : rok <br>
+        チーズ (chiizu) : keju <br><br><br><br>
+      </p>
+
+     </article>
+  </div> 
+
+  <button class="top" id="scrollToTopBtn"> ↑ </button>
+
+</body>
+
+</html>

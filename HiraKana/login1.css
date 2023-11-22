@@ -1,0 +1,185 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans serif;
+}
+body{
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+.banner video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+  
+
+
+.login_form_container{
+    position: relative;
+    width: 400px;
+    height: 470px;
+    max-width: 400px;
+    max-height: 470px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.login_form_container::before{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(88, 124, 177));
+    animation: rotate_border 6s linear infinite;
+    mix-blend-mode: overlay;
+    border-radius: 25%;
+}
+.login_form_container::after{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, rgb(125, 162, 193));
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+    mix-blend-mode: overlay;
+    border-radius: 25%;
+}
+@keyframes rotate_border{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.login_form{
+    position: absolute;
+    content: '';
+    background-color: rgba(0,0,0,0.1); 
+    border-radius: 50px 50px;
+    inset: 5px;
+    padding: 0px 50px;
+    z-index: 10;
+    color: #00ccff;
+} 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #e5e5e5;
+}
+.input_group{
+    margin-top: 40px;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: start;
+}
+.input_text{
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ccff;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #e5e5e5;
+
+}
+::placeholder{
+    font-size: 15px;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+
+}
+.fa{
+    font-size: 20px;
+
+}
+.submit {
+    height: 30px;
+    width: 200px;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 30%;
+    border-radius: 30px;
+    background-color: #00ccff;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+.submit:hover {
+    color: #3d3e45;
+    transform: scale(1.15); 
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.7); 
+}
+
+.fotter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fotter a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e5e5;
+}
+.glowIcon {
+    text-shadow: 0 0 10px #00ccff;
+}
+
+.sign{
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: transform 0.3s ease;
+}
+
+.sign:hover{
+    color: #00ccff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.kembali{
+    margin-top: 20px;
+    justify-content: center;
+}
+.home{
+    text-decoration: none;
+    color: #e5e5e5;
+    background-color: #00ccff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.back:hover{
+    cursor: pointer;
+    color: #3d3e45;
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.7); 
+
+}

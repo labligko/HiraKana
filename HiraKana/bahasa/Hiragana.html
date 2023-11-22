@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/bahasa/style.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+  <title>Hiragana</title>
+  <script src="/bahasa/script.js"></script>
+</head>
+
+<body style="background-color: #D8D9DA;">
+
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li style="background: crimson; pointer-events: none;"><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="container">
+    <article>
+      <h2>Hiragana</h2>
+      <p class="description">
+        Huruf hiragana adalah suatu cara penulisan bahasa Jepang dan mewakili sebutan suku kata. Huruf hiragana juga merupakan huruf Jepang yang digunakan untuk menulis kata-kata asli dari bahasa Jepang seperti nama orang jepang, kata benda, dan kata kerja.  <br><br>
+        Fungsi Hiragana adalah untuk:<br>
+        •	Menulis kata asli Jepang yang tidak memiliki huruf kanji, atau huruf kanji yang tidak jelas dan terlalu formal untuk digunakan dalam penulisan <br>
+        •	Mengikuti huruf kanji untuk membentuk kata kerja atau kata sifat <br>
+        •	Penulisan partikel <br>
+        •	Penulisan furigana, atau cara mudah untuk membantu membaca huruf kanji. <br>
+        <br>
+        Berikut adalah huruf-huruf hiragana yang akan di pelajari:
+         </p>
+
+      <div class="btn">
+      <button onclick="showImage('../gambar/hiragana/A hiragana.png')"><h1>あ</h1>A</button>
+      <button onclick="showImage('../gambar/hiragana/I hiragana.png')"><h1>い</h1>I</button>
+      <button onclick="showImage('../gambar/hiragana/U hiragana.png')"><h1>う</h1>U</button>
+      <button onclick="showImage('../gambar/hiragana/E hiragana.png')"><h1>え</h1>E</button>
+      <button onclick="showImage('../gambar/hiragana/O hiragana.png')"><h1>お</h1>O</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ka hiragana.png')"><h1>か</h1>Ka</button>
+      <button onclick="showImage('../gambar/hiragana/Ki hiragana.png')"><h1>き</h1>Ki</button>
+      <button onclick="showImage('../gambar/hiragana/Ku hiragana.png')"><h1>く</h1>Ku</button>
+      <button onclick="showImage('../gambar/hiragana/Ke hiragana.png')"><h1>け</h1>Ke</button>
+      <button onclick="showImage('../gambar/hiragana/Ko hiragana.png')"><h1>こ</h1>Ko</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Sa hiragana.png')"><h1>さ</h1>Sa</button>
+      <button onclick="showImage('../gambar/hiragana/Shi hiragana.png')"><h1>し</h1>Shi</button>
+      <button onclick="showImage('../gambar/hiragana/Su hiragana.png')"><h1>す</h1>Su</button>
+      <button onclick="showImage('../gambar/hiragana/Se hiragana.png')"><h1>せ</h1>Se</button>
+      <button onclick="showImage('../gambar/hiragana/So hiragana.png')"><h1>そ</h1>So</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ta hiragana.png')"><h1>た</h1>Ta</button>
+      <button onclick="showImage('../gambar/hiragana/Chi hiragana.png')"><h1>ち</h1>Chi</button>
+      <button onclick="showImage('../gambar/hiragana/Tsu hiragana.png')"><h1>つ</h1>Tsu</button>
+      <button onclick="showImage('../gambar/hiragana/Te hiragana.png')"><h1>て</h1>Te</button>
+      <button onclick="showImage('../gambar/hiragana/To hiragana.png')"><h1>と</h1>To</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Na hiragana.png')"><h1>な</h1>Na</button>
+      <button onclick="showImage('../gambar/hiragana/Ni hiragana.png')"><h1>に</h1>Ni</button>
+      <button onclick="showImage('../gambar/hiragana/Nu hiragana.png')"><h1>ぬ</h1>Nu</button>
+      <button onclick="showImage('../gambar/hiragana/Ne hiragana.png')"><h1>ね</h1>Ne</button>
+      <button onclick="showImage('../gambar/hiragana/No hiragana.png')"><h1>の</h1>No</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ha hiragana.png')"><h1>は</h1>Ha</button>
+      <button onclick="showImage('../gambar/hiragana/Hi hiragana.png')"><h1>ひ</h1>Hi</button>
+      <button onclick="showImage('../gambar/hiragana/Fu hiragana.png')"><h1>ふ</h1>Fu</button>
+      <button onclick="showImage('../gambar/hiragana/He hiragana.png')"><h1>へ</h1>He</button>
+      <button onclick="showImage('../gambar/hiragana/Ho hiragana.png')"><h1>ほ</h1>Ho</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ma hiragana.png')"><h1>ま</h1>Ma</button>
+      <button onclick="showImage('../gambar/hiragana/Mi hiragana.png')"><h1>み</h1>Mi</button>
+      <button onclick="showImage('../gambar/hiragana/Mu hiragana.png')"><h1>む</h1>Mu</button>
+      <button onclick="showImage('../gambar/hiragana/Me hiragana.png')"><h1>め</h1>Me</button>
+      <button onclick="showImage('../gambar/hiragana/Mo hiragana.png')"><h1>も</h1>Mo</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ya hiragana.png')"><h1>や</h1>Ya</button>
+      <button onclick="showImage('../gambar/hiragana/Yu hiragana.png')" class="sbtn"><h1>ゆ</h1>Yu</button>
+      <button onclick="showImage('../gambar/hiragana/Yo hiragana.png')" class="sbtn"><h1>よ</h1>Yo</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Ra hiragana.png')"><h1>ら</h1>Ra</button>
+      <button onclick="showImage('../gambar/hiragana/Ri hiragana.png')"><h1>り</h1>Ri</button>
+      <button onclick="showImage('../gambar/hiragana/Ru hiragana.png')"><h1>る</h1>Ru</button>
+      <button onclick="showImage('../gambar/hiragana/Re hiragana.png')"><h1>れ</h1>Re</button>
+      <button onclick="showImage('../gambar/hiragana/Ro hiragana.png')"><h1>ろ</h1>Ro</button>
+      <br><br><br><br>
+      <button onclick="showImage('../gambar/hiragana/Wa hiragana.png')"><h1>わ</h1>Wa</button>
+      <button onclick="showImage('../gambar/hiragana/Wo hiragana.png')" class="sbtn"><h1>を</h1>Wo</button>
+      <button onclick="showImage('../gambar/hiragana/N hiragana.png')" class="sbtn"><h1>ん</h1>N</button>
+      <br>
+      </div>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas cara penulisan dan pelafalan huruf hiragana
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/hiragana.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+    
+
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()"> &times; </span>
+        <img id="modalImage" class="modal-content">
+        <button class="sound" onclick="jalankanlagu()"><h1>🔊</h1></button>
+        <audio src="" style="display: none;" id="aud_io">
+          <source>
+        </audio>
+      </div>
+
+
+
+      <h2>Hiragana Dakuon</h2>
+      <p class="description">
+        Hiragana dakuon adalah huruf hiragana yang memiliki tambahan seperti tanda petik dua「゛」 di kanan atas huruf yang disebut tenten / dakuten. Hiragana dakuon berjumlah 20 huruf, cara membacanya yaitu dengan cara menebalkan bunyi dari hiragana dasarnya. <br>
+      </p>
+      <div class="btn">
+      <button onclick="playAudio('audio_ga')"><h1>が</h1>Ga</button>
+      <audio id="audio_ga" controls style="display: none;">
+        <source src="../bahasa/audio/Ga.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_gi')"><h1>ぎ</h1>Gi</button>
+      <audio id="audio_gi" controls style="display: none;">
+        <source src="../bahasa/audio/Gi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_gu')"><h1>ぐ</h1>Gu</button>
+      <audio id="audio_gu" controls style="display: none;">
+        <source src="../bahasa/audio/Gu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ge')"><h1>げ</h1>Ge</button>
+      <audio id="audio_ge" controls style="display: none;">
+        <source src="../bahasa/audio/Ge.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_go')"><h1>ご</h1>Go</button>
+      <audio id="audio_go" controls style="display: none;">
+        <source src="../bahasa/audio/Go.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_za')"><h1>ざ</h1>Za</button>
+      <audio id="audio_za" controls style="display: none;">
+        <source src="../bahasa/audio/Za.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ji')"><h1>じ</h1>Ji</button>
+      <audio id="audio_ji" controls style="display: none;">
+        <source src="../bahasa/audio/Ji.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_zu')"><h1>ず</h1>Zu</button>
+      <audio id="audio_zu" controls style="display: none;">
+        <source src="../bahasa/audio/Zu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ze')"><h1>ぜ</h1>Ze</button>
+      <audio id="audio_ze" controls style="display: none;">
+        <source src="../bahasa/audio/Ze.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_zo')"><h1>ぞ</h1>Zo</button>
+      <audio id="audio_zo" controls style="display: none;">
+        <source src="../bahasa/audio/Zo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_da')"><h1>だ</h1>Da</button>
+      <audio id="audio_da" controls style="display: none;">
+        <source src="../bahasa/audio/Da.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ji')"><h1>ぢ</h1>Ji</button>
+      <button onclick="playAudio('audio_zu')"><h1>づ</h1>Zu</button>
+      <button onclick="playAudio('audio_de')"><h1>で</h1>De</button>
+      <audio id="audio_de" controls style="display: none;">
+        <source src="../bahasa/audio/De.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_do')"><h1>ど</h1>Do</button>
+      <audio id="audio_do" controls style="display: none;">
+        <source src="../bahasa/audio/Do.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_ba')"><h1>ば</h1>Ba</button>
+      <audio id="audio_ba" controls style="display: none;">
+        <source src="../bahasa/audio/Ba.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_bi')"><h1>び</h1>Bi</button>
+      <audio id="audio_bi" controls style="display: none;">
+        <source src="../bahasa/audio/Bi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_bu')"><h1>ぶ</h1>Bu</button>
+      <audio id="audio_bu" controls style="display: none;">
+        <source src="../bahasa/audio/Bu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_be')"><h1>べ</h1>Be</button>
+      <audio id="audio_be" controls style="display: none;">
+        <source src="../bahasa/audio/Be.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_bo')"><h1>ぼ</h1>Bo</button>
+      <audio id="audio_bo" controls style="display: none;">
+        <source src="../bahasa/audio/Bo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      </div>
+
+      <h2>Hiragana Handakuon</h2>
+      <p class="description">
+        hiragana handakuon adalah huruf hiragana yang memiliki tambahan bulatan kecil 「゜」di kanan atas huruf yang disebut maru / handakuten. Hiragana handakuten hanya berjumlah 5 huruf saja, dibaca setengah menebal dari hiragana dasarnya. <br>
+      </p>
+
+      <div class="btn">
+      <button onclick="playAudio('audio_pa')"><h1>ぱ</h1>pa</button>
+        <audio id="audio_pa" controls style="display: none;">
+          <source src="../bahasa/audio/Pa.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pi')"><h1>ぴ</h1>pi</button>
+        <audio id="audio_pi" controls style="display: none;">
+          <source src="../bahasa/audio/Pi.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pu')"><h1>ぷ</h1>pu</button>
+        <audio id="audio_pu" controls style="display: none;">
+          <source src="../bahasa/audio/Pu.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_pe')"><h1>ぺ</h1>pe</button>
+        <audio id="audio_pe" controls style="display: none;">
+          <source src="../bahasa/audio/Pe.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio('audio_po')"><h1>ぽ</h1>po</button>
+        <audio id="audio_po" controls style="display: none;">
+          <source src="../bahasa/audio/Po.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      <br>
+      </div>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas penulisan dan pelafalan hiragana dakuon dan hiragana handakuon.
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/hiragana_dakuon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+
+      <h2>Hiragana Youon</h2>
+      <p class="description">
+        Hiragana youon adalah huruf hiragana berhuruf vokal "i" seperti 「き」、「し」、「ち」、「ひ」、「に」、「み」dan「り」yang digabungkan dengan 「ゃ」、「ゅ」、「ょ」. Pada hiragana jenis ini juga tidak ada bentuk huruf baru karena hanya merupakan hiragana gabungan yang membentuk bunyi tertentu. Dan meski terdiri dari dua huruf, hiragana jenis ini tetap terhitung satu suku kata. <br>
+      </p>
+      
+      <ul>
+      <button onclick="playAudio('audio_kya')"><h1>きゃ</h1>Kya</button>
+      <audio id="audio_kya" controls style="display: none;">
+        <source src="../bahasa/audio/Kya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_kyu')"><h1>きゅ</h1>Kyu</button>
+      <audio id="audio_kyu" controls style="display: none;">
+        <source src="../bahasa/audio/Kyu.mp3" type="audio/mpeg">
+        Your browser
+         does not support the audio element.
+      </audio>
+      <button onclick="playAudio('audio_kyo')"><h1>きょ</h1>Kyo</button>
+      <audio id="audio_kyo" controls style="display: none;">
+        <source src="../bahasa/audio/Kyo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_sha')"><h1>しゃ</h1>Sha</button>
+      <audio id="audio_sha" controls style="display: none;">
+        <source src="../bahasa/audio/Sha.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_shu')"><h1>しゅ</h1>Shu</button>
+      <audio id="audio_shu" controls style="display: none;">
+        <source src="../bahasa/audio/Shu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_sho')"><h1>しょ</h1>Sho</button>
+      <audio id="audio_sho" controls style="display: none;">
+        <source src="../bahasa/audio/Sho.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_cha')"><h1>ちゃ</h1>Cha</button>
+      <audio id="audio_cha" controls style="display: none;">
+        <source src="../bahasa/audio/Cha.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_chu')"><h1>ちゅ</h1>Chu</button>
+      <audio id="audio_chu" controls style="display: none;">
+        <source src="../bahasa/audio/Chu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_cho')"><h1>ちょ</h1>Cho</button>
+      <audio id="audio_choo" controls style="display: none;">
+        <source src="../bahasa/audio/Cho.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_nya')"><h1>にゃ</h1>Nya</button>
+      <audio id="audio_nya" controls style="display: none;">
+        <source src="../bahasa/audio/Nya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_nyu')"><h1>にゅ</h1>Nyu</button>
+      <audio id="audio_nyu" controls style="display: none;">
+        <source src="../bahasa/audio/Nyu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_nyo')"><h1>にょ</h1>Nyo</button>
+      <audio id="audio_nyo" controls style="display: none;">
+        <source src="../bahasa/audio/Nyo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_hya')"><h1>ひゃ</h1>Hya</button>
+      <audio id="audio_hya" controls style="display: none;">
+        <source src="../bahasa/audio/Hya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_hyu')"><h1>ひゅ</h1>Hyu</button>
+      <audio id="audio_hyu" controls style="display: none;">
+        <source src="../bahasa/audio/Hyu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_hyo')"><h1>ひょ</h1>Hyo</button>
+      <audio id="audio_hyo" controls style="display: none;">
+        <source src="../bahasa/audio/Hyo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_mya')"><h1>みゃ</h1>Mya</button>
+      <audio id="audio_mya" controls style="display: none;">
+        <source src="../bahasa/audio/Mya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_myu')"><h1>みゅ</h1>Myu</button>
+      <audio id="audio_myu" controls style="display: none;">
+        <source src="../bahasa/audio/Myu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_myo')"><h1>みょ</h1>Myo</button>
+      <audio id="audio_myo" controls style="display: none;">
+        <source src="../bahasa/audio/Myo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br><br><br><br>
+
+      <button onclick="playAudio('audio_rya')"><h1>りゃ</h1>Rya</button>
+      <audio id="audio_rya" controls style="display: none;">
+        <source src="../bahasa/audio/Rya.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ryu')"><h1>りゅ</h1>Ryu</button>
+      <audio id="audio_ryu" controls style="display: none;">
+        <source src="../bahasa/audio/Ryu.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="playAudio('audio_ryo')"><h1>りょ</h1>Ryo</button>
+      <audio id="audio_ryo" controls style="display: none;">
+        <source src="../bahasa/audio/Ryo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <br>
+      </ul>
+
+      <p class="description">
+        kamu juga bisa melihat vidio ini untuk lebih jelas penulisan dan pelafalan hiragana youon.
+        <br><br>
+        <video width="320" height="240" style="margin-left: 30%;" controls>
+          <source src="../gambar/video/hiragana_youon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </p>
+
+      <h2>Hiragana Sokuon</h2>
+      <p class="description">
+        Hiragana sokuon ditandai dengan penambahan huruf っ (tsu) kecil di depan huruf konsonan. Huruf っkecil berfungsi untuk menggandakan huruf konsonan yang ada di depannya. <br><br>
+        Contoh: <br>
+        がっこう (gaKKou) : sekolah <br>
+        きって (kiTTe) : perangko <br><br>
+        Dalam bahasa Jepang terdapat banyak kosakata yang sama jika ditulis dengan hiragana, jadi perhatikan baik-baik apakah kosakata itu perlu tambahan っ kecil atau tidak. Karena satu huruf saja dapat mengubah artinya loh! <br>
+      </p>
+
+      <h2>Hiragana Chounon</h2>
+      <p class="description">
+        Chouon 「長音」artinya bunyi panjang. Hiragana chouon ditandai dengan tambahan huruf vokal hiragana di belakang huruf konsonan yang berakhiran vokal yang sama. <br>
+        Hiragana chouon memiliki beberapa aturannya yaitu sebagai berikut: <br><br>
+        Huruf konsonan yang berakhiran -a <br>
+        Ditambahkan huruf vokal (a). Cara bacanya: aa <br>
+        Contoh: おかあさん / okaasan: ibu <br><br>
+
+        Huruf konsonan yang berakhiran-i  <br>
+        Ditambahkan huruf vokal (i). Cara bacanya: ii <br>
+        Contoh: おじいさん / ojiisan: kakek <br><br>
+
+        Huruf konsonan yang berakhiran -u <br>
+        Ditambahkan huruf vokal (u). Cara bacanya: uu <br>
+        Contoh: ぎゅうにゅう / gyuunyuu: susu sapi <br><br>
+
+        Huruf konsonan yang berakhiran -e <br>
+        1. Ditambahkan huruf vokal (e). Cara bacanya: ee <br>
+        Contoh: おねえさん / oneesan: kakak perempuan <br>
+        2. Ditambahkan huruf vokal (i) juga. Dibaca : ee juga tapi samar-samar hampir (ei) <br>
+        Contoh: せんせい / sensei dibaca sensee: guru <br><br>
+
+        Huruf konsonan yang berakhiran-o  <br>
+        1. Ditambahkan huruf vokal (u). Cara bacanya: oo <br>
+        Contoh: べんきょう / benkyou dibaca benkyoo:  belajar <br>
+        2. Ditambahkan huruf vokal (o) juga. Cara bacanya: oo juga. <br>
+        Contoh: ほお / hoo: pipi.  <br><br><br><br>
+      </p>
+
+    </article>
+  </div> 
+
+  <button class="top" id="scrollToTopBtn"> ↑ </button>
+
+</body>
+
+</html>

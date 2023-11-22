@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/kamus/kamus.css">
+    <link href="/gambar/hirakana full.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kotoba</title>
+</head>
+
+<body style="background-color: #D8D9DA;">
+
+    <label>
+        <input type="checkbox" id="menuToggle">
+        <div class="toggle" for="menuToggle">
+            <span class="top_line common"></span>
+            <span class="middle_line common"></span>
+            <span class="bottom_line common"></span>
+        </div>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul>
+                <li><a href="/home.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+                <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+                <li><a href="/Kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+                <li style="background: crimson; pointer-events: none;"><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+                <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+                <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+                <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+                <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+                <li><a href="/contact.html"><i class="fas fa-headset"></i> Contact</a></li>
+                <li><a href="/about.html"><i class="fas fa-circle-info"></i>About</a></li>
+            </ul>
+            <div class="brand">
+                <div class="firstname">hira</div>
+                <div class="lastname">kana</div>
+            </div>
+        </div>
+    </label>
+
+    <div class="container">
+        <article>
+            <h2>Kata-kata / 言葉(kotoba)</h2>
+            <table border="1" style="margin-bottom: 20px;">
+                <tr>
+                    <th colspan="2" style="border-bottom: none;">Bahasa Jepang</th>
+                    <th rowspan="2" style="border-bottom: none;">Bahasa Indonesia</th>
+                </tr>
+                <tr>
+                    <th>kata asli</th>
+                    <th>Bacaan/<br> (asal kata)</th>
+                </tr>
+                <tr>
+                    <td onclick="speakText('アニメ', 'ja-JP')">アニメ</td>
+                    <td onclick="speakText('アニメ', 'ja-JP')">Anime</td>
+                    <td onclick="speakText('anime', 'id-ID')">anime</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('寮', 'ja-JP')">寮 <br> (りょう)</td>
+                    <td onclick="speakText('寮', 'ja-JP')">ryoo</td>
+                    <td onclick="speakText('Asrama', 'id-ID')">Asrama</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('アニメーター', 'ja-JP')">アニメーター</td>
+                    <td onclick="speakText('アニメーター', 'ja-JP')">Animeetaa</td>
+                    <td onclick="speakText('animator', 'id-ID')">animator</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ちち', 'ja-JP')">ちち</td>
+                    <td onclick="speakText('ちち', 'ja-JP')">chichi</td>
+                    <td onclick="speakText('ayah', 'id-ID')">ayah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('お父さん, または, ぱぱ ', 'ja-JP')">お父さん /<br> ぱぱ </td>
+                    <td onclick="speakText('お父さん, または, ぱぱ ', 'ja-JP')">otousan / papa</td>
+                    <td onclick="speakText('ayah', 'id-ID')">ayah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('弟', 'ja-JP')">弟 <br> (おとうと)</td>
+                    <td onclick="speakText('弟', 'ja-JP')">otouto</td>
+                    <td onclick="speakText('adik laki-laki', 'id-ID')">adik laki-laki</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('妹', 'ja-JP')">妹 <br> (いもうと)</td>
+                    <td onclick="speakText('妹', 'ja-JP')">imouto</td>
+                    <td onclick="speakText('adik perempuan', 'id-ID')">adik perempuan</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('子供', 'ja-JP')">子供 <br> (こども)</td>
+                    <td onclick="speakText('子供', 'ja-JP')">kodomo</td>
+                    <td onclick="speakText('anak', 'id-ID')">anak</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('風', 'ja-JP')">風 <br> (かぜ)</td>
+                    <td onclick="speakText('風', 'ja-JP')">kaze</td>
+                    <td onclick="speakText('angin', 'id-ID')">angin</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('バスケットボール', 'ja-JP')">バスケットボール</td>
+                    <td onclick="speakText('バスケットボール', 'ja-JP')">Basukettobōru</td>
+                    <td onclick="speakText('bola basket', 'id-ID')">bola basket</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('バドミントン', 'ja-JP')">バドミントン</td>
+                    <td onclick="speakText('バドミントン', 'ja-JP')">Badominton</td>
+                    <td onclick="speakText('bulu tangkis', 'id-ID')">bulu tangkis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('キャンプ', 'ja-JP')">キャンプ</td>
+                    <td onclick="speakText('キャンプ', 'ja-JP')">Kyanpu</td>
+                    <td onclick="speakText('berkemah', 'id-ID')">berkemah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('椅子', 'ja-JP')">椅子 <br> (いす)</td>
+                    <td onclick="speakText('椅子', 'ja-JP')">isu</td>
+                    <td onclick="speakText('bangku', 'id-ID')">bangku</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ノート', 'ja-JP')">ノート</td>
+                    <td onclick="speakText('ノート', 'ja-JP')">nooto <br> (note)</td>
+                    <td onclick="speakText('buku tulis', 'id-ID')">buku tulis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('本', 'ja-JP')">本 <br> (ホン)</td>
+                    <td onclick="speakText('本', 'ja-JP')">hon</td>
+                    <td onclick="speakText('buku', 'id-ID')">buku</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ボールペン', 'ja-JP')">ボールペン</td>
+                    <td onclick="speakText('ボールペン', 'ja-JP')">boorupen <br> (ballpoint pen) </td>
+                    <td onclick="speakText('bolpoin', 'id-ID')">bolpoin</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('勉強', 'ja-JP')">勉強 <br> (べんきょお)</td>
+                    <td onclick="speakText('勉強', 'ja-JP')">Benkyoo</td>
+                    <td onclick="speakText('belajar', 'id-ID')">belajar</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おば', 'ja-JP')">おば</td>
+                    <td onclick="speakText('おば', 'ja-JP')">oba</td>
+                    <td onclick="speakText('bibi', 'id-ID')">bibi</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おばさん, または, おばちゃん', 'ja-JP')">おばさん/ <br> おばちゃん</td>
+                    <td onclick="speakText('おばさん, または, おばちゃん', 'ja-JP')">obasan/ <br> obachan</td>
+                    <td onclick="speakText('bibi', 'id-ID')">bibi</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('吹雪', 'ja-JP')">吹雪 <br> (ふぶき)</td>
+                    <td onclick="speakText('吹雪', 'ja-JP')">fubuki</td>
+                    <td onclick="speakText('badai salju', 'id-ID')">badai salju</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('孫', 'ja-JP')">孫 <br> (まご)</td>
+                    <td onclick="speakText('孫', 'ja-JP')">mago</td>
+                    <td onclick="speakText('cucu', 'id-ID')">cucu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('天気', 'ja-JP')">天気 <br> (てんき)</td>
+                    <td onclick="speakText('天気', 'ja-JP')">tenki</td>
+                    <td onclick="speakText('Cuaca', 'id-ID')">Cuaca</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('晴れ', 'ja-JP')">晴れ <br> (はれ)</td>
+                    <td onclick="speakText('晴れ', 'ja-JP')">hare</td>
+                    <td onclick="speakText('cerah', 'id-ID')">cerah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('デザイナー', 'ja-JP')">デザイナー</td>
+                    <td onclick="speakText('デザイナー', 'ja-JP')">Dezainaa</td>
+                    <td onclick="speakText('designer', 'id-ID')">designer</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('医者', 'ja-JP')">医者 <br> (いしゃ)</td>
+                    <td onclick="speakText('医者', 'ja-JP')">isha</td>
+                    <td onclick="speakText('dokter', 'id-ID')">dokter</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('写真家', 'ja-JP')">写真家 <br> (しゃしんか)</td>
+                    <td onclick="speakText('写真家', 'ja-JP')">shashin-ka</td>
+                    <td onclick="speakText('fotografer', 'id-ID')">fotografer</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('体育館', 'ja-JP')">体育館 <br> (たいいくかん)</td>
+                    <td onclick="speakText('体育館', 'ja-JP')">taiikukan</td>
+                    <td onclick="speakText('Gedung Olahraga', 'id-ID')">Gedung Olahraga</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('鋏', 'ja-JP')">鋏 <br> (はさみ)</td>
+                    <td onclick="speakText('鋏', 'ja-JP')">hasami</td>
+                    <td onclick="speakText('gunting', 'id-ID')">gunting</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ゲーム', 'ja-JP')">ゲーム</td>
+                    <td onclick="speakText('ゲーム', 'ja-JP')">Gēmu</td>
+                    <td onclick="speakText('game', 'id-ID')">game</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('先生', 'ja-JP')">先生 <br> (せんせい)</td>
+                    <td onclick="speakText('先生', 'ja-JP')">sensei</td>
+                    <td onclick="speakText('guru', 'id-ID')">guru</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('霧雨', 'ja-JP')">霧雨 <br> (きりさめ)</td>
+                    <td onclick="speakText('霧雨', 'ja-JP')">kirisame</td>
+                    <td onclick="speakText('gerimis', 'id-ID')">gerimis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('校庭', 'ja-JP')">校庭 <br> (こうてい)</td>
+                    <td onclick="speakText('校庭', 'ja-JP')">kootee</td>
+                    <td onclick="speakText('Halaman Sekolah', 'id-ID')">Halaman Sekolah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('雨', 'ja-JP')">雨 <br> (あめ)</td>
+                    <td onclick="speakText('雨', 'ja-JP')">ame</td>
+                    <td onclick="speakText('hujan', 'id-ID')">hujan</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('主婦', 'ja-JP')">主婦 <br> (しゅふ)</td>
+                    <td onclick="speakText('主婦', 'ja-JP')">shufu</td>
+                    <td onclick="speakText('ibu rumah tangga', 'id-ID')">ibu rumah tangga</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('はは', 'ja-JP')">はは</td>
+                    <td onclick="speakText('はは', 'ja-JP')">haha</td>
+                    <td onclick="speakText('ibu', 'id-ID')">ibu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('お母さん, または, まま', 'ja-JP')">お母さん / <br> まま<br> </td>
+                    <td onclick="speakText('お母さん, または, まま', 'ja-JP')">okaasan/ <br> mama</td>
+                    <td onclick="speakText('ibu', 'id-ID')">ibu</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('妻', 'ja-JP')">妻 <br> (つま)</td>
+                    <td onclick="speakText('妻', 'ja-JP')">tsuma</td>
+                    <td onclick="speakText('istri', 'id-ID')">istri</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('後輩', 'ja-JP')">後輩 <br> (こうはい)</td>
+                    <td onclick="speakText('後輩', 'ja-JP')">koohai</td>
+                    <td onclick="speakText('Junior', 'id-ID')">Junior</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('とき', 'ja-JP')">時 <br> (とき)</td>
+                    <td onclick="speakText('とき', 'ja-JP')">toki</td>
+                    <td onclick="speakText('jam', 'id-ID')">jam </td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('チョーク', 'ja-JP')">チョーク</td>
+                    <td onclick="speakText('チョーク', 'ja-JP')">chooku</td>
+                    <td onclick="speakText('kapur', 'id-ID')">kapur</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('紙', 'ja-JP')">紙 <br> (かみ)</td>
+                    <td onclick="speakText('紙', 'ja-JP')">kami</td>
+                    <td onclick="speakText('kertas', 'id-ID')">kertas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('カラオケ', 'ja-JP')">カラオケ</td>
+                    <td onclick="speakText('カラオケ', 'ja-JP')">Karaoke</td>
+                    <td onclick="speakText('カラオケ', 'id-ID')">karaoke</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('漫画', 'ja-JP')">漫画 <br> (まんが)</td>
+                    <td onclick="speakText('漫画', 'ja-JP')">Manga</td>
+                    <td onclick="speakText('komik', 'id-ID')">komik</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('校長先生', 'ja-JP')">校長先生 <br> (こうちょうせんせい)</td>
+                    <td onclick="speakText('校長先生', 'ja-JP')">koochoo sensee</td>
+                    <td onclick="speakText('Kepala Sekolah', 'id-ID')">Kepala Sekolah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('食堂', 'ja-JP')">食堂 <br> (しょくどお)</td>
+                    <td onclick="speakText('食堂', 'ja-JP')">shokudoo</td>
+                    <td onclick="speakText('Kantin', 'id-ID')">Kantin</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('扇風機', 'ja-JP')">扇風機 <br> (せんぷうき)</td>
+                    <td onclick="speakText('扇風機', 'ja-JP')">senpuuki</td>
+                    <td onclick="speakText('kipas', 'id-ID')">kipas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('カレンダー', 'ja-JP')">カレンダー <br> (かれんだあ)</td>
+                    <td onclick="speakText('カレンダー', 'ja-JP')">karendaa</td>
+                    <td onclick="speakText('kalender', 'id-ID')">kalender</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('電卓', 'ja-JP')">電卓 <br> (でんたく)</td>
+                    <td onclick="speakText('電卓', 'ja-JP')">dentaku</td>
+                    <td onclick="speakText('kalkulator', 'id-ID')">kalkulator</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('家族', 'ja-JP')">家族 <br> (かぞく)</td>
+                    <td onclick="speakText('家族', 'ja-JP')">kazoku</td>
+                    <td onclick="speakText('Keluarga', 'id-ID')">Keluarga</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('あに, または, お兄ちゃん', 'ja-JP')">あに/<br> お兄ちゃん</td>
+                    <td onclick="speakText('あに, または, お兄ちゃん', 'ja-JP')">ani/ oniichan</td>
+                    <td onclick="speakText('kakak laki-laki', 'id-ID')">kakak laki-laki</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('あね, または, お姉ちゃん', 'ja-JP')">あね/<br> お姉ちゃん</td>
+                    <td onclick="speakText('あね, または, お姉ちゃん', 'ja-JP')">ane/ oneechan</td>
+                    <td onclick="speakText('kakak perempuan', 'id-ID')">kakak perempuan</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('祖父', 'ja-JP')">祖父 <br> (そふ)</td>
+                    <td onclick="speakText('祖父', 'ja-JP')">sofu</td>
+                    <td onclick="speakText('kakek', 'id-ID')">kakek</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おじいちゃん', 'ja-JP')">お祖父ちゃん <br> (おじいちゃん)</td>
+                    <td onclick="speakText('おじいちゃん', 'ja-JP')">ojiichan</td>
+                    <td onclick="speakText('kakek', 'id-ID')">kakek</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('稲妻', 'ja-JP')">稲妻 <br> (いなずま)</td>
+                    <td onclick="speakText('稲妻', 'ja-JP')">inazuma</td>
+                    <td onclick="speakText('kilat', 'id-ID')">kilat</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ベル', 'ja-JP')">ベル</td>
+                    <td onclick="speakText('ベル', 'ja-JP')">beru (bell) </td>
+                    <td onclick="speakText('lonceng', 'id-ID')">lonceng</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('通路側', 'ja-JP')">通路側 <br> (つうろがわ)</td>
+                    <td onclick="speakText('通路側', 'ja-JP')">tsurogawa</td>
+                    <td onclick="speakText('Lorong', 'id-ID')">Lorong</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('机', 'ja-JP')">机 <br> (つくえ)</td>
+                    <td onclick="speakText('机', 'ja-JP')">tsukue</td>
+                    <td onclick="speakText('meja', 'id-ID')">meja</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('季節', 'ja-JP')">季節 <br> (きせつ)</td>
+                    <td onclick="speakText('季節', 'ja-JP')">kisetsu</td>
+                    <td onclick="speakText('musim', 'id-ID')">musim</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('春', 'ja-JP')">春 <br> (はる)</td>
+                    <td onclick="speakText('春', 'ja-JP')">haru</td>
+                    <td onclick="speakText('musim semi', 'id-ID')">musim semi</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('夏', 'ja-JP')">夏 <br> (なつ)</td>
+                    <td onclick="speakText('夏', 'ja-JP')">natsu</td>
+                    <td onclick="speakText('musim panas', 'id-ID')">musim panas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('秋', 'ja-JP')">秋 <br> (あき)</td>
+                    <td onclick="speakText('秋', 'ja-JP')">aki</td>
+                    <td onclick="speakText('musim gugur', 'id-ID')">musim gugur</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('冬', 'ja-JP')">冬 <br> (ふゆ)</td>
+                    <td onclick="speakText('冬', 'ja-JP')">fuyu</td>
+                    <td onclick="speakText('musim dingin', 'id-ID')">musim dingin</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('梅雨', 'ja-JP')">梅雨 <br> (つゆ)</td>
+                    <td onclick="speakText('梅雨', 'ja-JP')">tsuyu</td>
+                    <td onclick="speakText('musim hujan', 'id-ID')">musim hujan</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('乾季', 'ja-JP')">乾季 <br> (かんき)</td>
+                    <td onclick="speakText('乾季', 'ja-JP')">kanki</td>
+                    <td onclick="speakText('musim kemarau', 'id-ID')">musim kemarau</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('祖母', 'ja-JP')">祖母 <br> (そぼ)</td>
+                    <td onclick="speakText('祖母', 'ja-JP')">sobo</td>
+                    <td onclick="speakText('nenek', 'id-ID')">nenek</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おばあちゃん', 'ja-JP')">お婆ちゃん <br> (おばあちゃん)</td>
+                    <td onclick="speakText('おばあちゃん', 'ja-JP')">obaachan</td>
+                    <td onclick="speakText('nenek', 'id-ID')">nenek</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('波', 'ja-JP')">波 <br> (なみ)</td>
+                    <td onclick="speakText('波', 'ja-JP')">nami</td>
+                    <td onclick="speakText('ombak', 'id-ID')">ombak</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('学生', 'ja-JP')">学生 <br> (がくせい)</td>
+                    <td onclick="speakText('学生', 'ja-JP')">gakusee</td>
+                    <td onclick="speakText('Pelajar', 'id-ID')">Pelajar</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('教師', 'ja-JP')">教師 <br> (きょうし)</td>
+                    <td onclick="speakText('教師', 'ja-JP')">kyooshi</td>
+                    <td onclick="speakText('Pengajar', 'id-ID')">Pengajar</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('図書館', 'ja-JP')">図書館 <br> (としょかん)</td>
+                    <td onclick="speakText('図書館', 'ja-JP')">toshokan</td>
+                    <td onclick="speakText('Perpustakaan', 'id-ID')">Perpustakaan</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('黒板', 'ja-JP')">黒板 <br> (こくばん)</td>
+                    <td onclick="speakText('黒板', 'ja-JP')">kokuban</td>
+                    <td onclick="speakText('papan tulis', 'id-ID')">papan tulis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('黒板消し', 'ja-JP')">黒板消し <br> (こくばんけし)</td>
+                    <td onclick="speakText('黒板消し', 'ja-JP')">kokuban keshi</td>
+                    <td onclick="speakText('penghapus papan tulis', 'id-ID')">penghapus papan tulis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('鉛筆', 'ja-JP')">鉛筆 <br> (えんぴつ)</td>
+                    <td onclick="speakText('鉛筆', 'ja-JP')">enpitsu</td>
+                    <td onclick="speakText('pensil', 'id-ID')">pensil</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ペン', 'ja-JP')">ペン</td>
+                    <td onclick="speakText('ペン', 'ja-JP')">pen</td>
+                    <td onclick="speakText('pena', 'id-ID')">pena</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('シャーペン', 'ja-JP')">シャーペン</td>
+                    <td onclick="speakText('シャーペン', 'ja-JP')">shaapen</td>
+                    <td onclick="speakText('pensil mekanik', 'id-ID')">pensil mekanik</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('地図', 'ja-JP')">地図 <br> (ちず)</td>
+                    <td onclick="speakText('地図', 'ja-JP')">chizu</td>
+                    <td onclick="speakText('peta', 'id-ID')">peta</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('消しゴム', 'ja-JP')">消しゴム <br> (けしゴム)</td>
+                    <td onclick="speakText('消しゴム', 'ja-JP')">keshigomu</td>
+                    <td onclick="speakText('penghapus', 'id-ID')">penghapus</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ものさし', 'ja-JP')">ものさし</td>
+                    <td onclick="speakText('ものさし', 'ja-JP')">monosashi</td>
+                    <td onclick="speakText('penggaris', 'id-ID')">penggaris</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('声優', 'ja-JP')">声優 <br> (せいゆう)</td>
+                    <td onclick="speakText('声優', 'ja-JP')">seiyuu</td>
+                    <td onclick="speakText('pengisi suara', 'id-ID')">pengisi suara</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('プログラマー', 'ja-JP')">プログラマー</td>
+                    <td onclick="speakText('プログラマー', 'ja-JP')">Puroguramaa</td>
+                    <td onclick="speakText('pemrogram', 'id-ID')">pemrogram</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('画家', 'ja-JP')">画家 <br> (がか)</td>
+                    <td onclick="speakText('画家', 'ja-JP')">ga-ka</td>
+                    <td onclick="speakText('pelukis', 'id-ID')">pelukis</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('社長', 'ja-JP')">社長 <br> (しゃちょお)</td>
+                    <td onclick="speakText('社長', 'ja-JP')">shachoo</td>
+                    <td onclick="speakText('presiden', 'id-ID')">presiden</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('消防士', 'ja-JP')">消防士 <br> (しょおぼおし)</td>
+                    <td onclick="speakText('消防士', 'ja-JP')">shooboo-shi</td>
+                    <td onclick="speakText('pemadam kebakaran', 'id-ID')">pemadam kebakaran</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('警察', 'ja-JP')">警察 <br> (けいさつ)</td>
+                    <td onclick="speakText('警察', 'ja-JP')">keisatsu</td>
+                    <td onclick="speakText('polisi', 'id-ID')">polisi</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('看護師', 'ja-JP')">看護師 <br> (かんごし)</td>
+                    <td onclick="speakText('看護師', 'ja-JP')">kango-shi</td>
+                    <td onclick="speakText('perawat', 'id-ID')">perawat</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('温泉', 'ja-JP')">温泉 <br> (おんせん)</td>
+                    <td onclick="speakText('温泉', 'ja-JP')">Onsen</td>
+                    <td onclick="speakText('pemandian air panas', 'id-ID')">pemandian air panas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('釣り竿', 'ja-JP')">釣り竿</td>
+                    <td onclick="speakText('釣り竿', 'ja-JP')">Tsurizao</td>
+                    <td onclick="speakText('pancing', 'id-ID')">pancing</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おじ', 'ja-JP')">おじ</td>
+                    <td onclick="speakText('おじ', 'ja-JP')">oji</td>
+                    <td onclick="speakText('paman', 'id-ID')">paman</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('おじさん, または, おじちゃん', 'ja-JP')">おじさん/ <br> おじちゃん</td>
+                    <td onclick="speakText('おじさん, または, おじちゃん', 'ja-JP')">ojisan/ <br> ojichan</td>
+                    <td onclick="speakText('paman', 'id-ID')">paman</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('虹', 'ja-JP')">虹 <br> (にじ)</td>
+                    <td onclick="speakText('虹', 'ja-JP')">niji</td>
+                    <td onclick="speakText('pelangi', 'id-ID')">pelangi</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('雷', 'ja-JP')">雷 <br> (かみなり)</td>
+                    <td onclick="speakText('雷', 'ja-JP')">kaminari</td>
+                    <td onclick="speakText('petir', 'id-ID')">petir</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('教室', 'ja-JP')">教室 <br> (きょうしつ)</td>
+                    <td onclick="speakText('教室', 'ja-JP')">kyooshitsu</td>
+                    <td onclick="speakText('Ruang kelas', 'id-ID')">Ruang kelas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('本棚', 'ja-JP')">本棚 <br> (ほんだな)</td>
+                    <td onclick="speakText('本棚', 'ja-JP')">hondana</td>
+                    <td onclick="speakText('rak buku', 'id-ID')">rak buku</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('水泳', 'ja-JP')">水泳 <br> (すいえい)</td>
+                    <td onclick="speakText('水泳', 'ja-JP')">Suiei</td>
+                    <td onclick="speakText('renang', 'id-ID')">renang</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('学校', 'ja-JP')">学校 <br> (がっこう)</td>
+                    <td onclick="speakText('学校', 'ja-JP')">gakkoo</td>
+                    <td onclick="speakText('Sekolah', 'id-ID')">Sekolah</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('小学校', 'ja-JP')">小学校 <br> (しょうがっこう)</td>
+                    <td onclick="speakText('小学校', 'ja-JP')">shoogakkoo</td>
+                    <td onclick="speakText('Sekolah Dasar', 'id-ID')">Sekolah Dasar</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('中学', 'ja-JP')">中学 <br> (ちゅうがく)</td>
+                    <td onclick="speakText('中学', 'ja-JP')">chuugakkoo</td>
+                    <td onclick="speakText('Sekolah menengah pertama', 'id-ID')">SMP</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('高校', 'ja-JP')">高校 <br> (こうこう)</td>
+                    <td onclick="speakText('高校', 'ja-JP')">kookoo</td>
+                    <td onclick="speakText('Sekolah menengah atas', 'id-ID')">SMA</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('専門高校', 'ja-JP')">専門高校 <br> (せんもんこうこう)</td>
+                    <td onclick="speakText('専門高校', 'ja-JP')">senmon kookoo</td>
+                    <td onclick="speakText('Sekolah menengah kejuruan', 'id-ID')">SMK</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('先輩', 'ja-JP')">先輩 <br> (せんぱい)</td>
+                    <td onclick="speakText('先輩', 'ja-JP')">senpai</td>
+                    <td onclick="speakText('Senior', 'id-ID')">Senior</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('制服', 'ja-JP')">制服 <br> (せいふく)</td>
+                    <td onclick="speakText('制服', 'ja-JP')">seifuku</td>
+                    <td onclick="speakText('seragam', 'id-ID')">seragam</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('フットボール', 'ja-JP')">フットボール</td>
+                    <td onclick="speakText('フットボール', 'ja-JP')">Futtobōru</td>
+                    <td onclick="speakText('sepak bola', 'id-ID')">sepak bola</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('雪', 'ja-JP')">雪 <br> (ゆき)</td>
+                    <td onclick="speakText('雪', 'ja-JP')">yuki</td>
+                    <td onclick="speakText('salju', 'id-ID')">salju</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('ふうふ', 'ja-JP')">ふうふ</td>
+                    <td onclick="speakText('ふうふ', 'ja-JP')">fuufu</td>
+                    <td onclick="speakText('suami istri', 'id-ID')">suami istri</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('夫', 'ja-JP')">夫 <br> (おっと)</td>
+                    <td onclick="speakText('夫', 'ja-JP')">otto</td>
+                    <td onclick="speakText('suami', 'id-ID')">suami</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('トイレ', 'ja-JP')">トイレ</td>
+                    <td onclick="speakText('トイレ', 'ja-JP')">toire</td>
+                    <td onclick="speakText('toilet', 'id-ID')">Toilet</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('鞄', 'ja-JP')">鞄 <br> (かばん)</td>
+                    <td onclick="speakText('鞄', 'ja-JP')">kaban</td>
+                    <td onclick="speakText('tas', 'id-ID')">tas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('インク', 'ja-JP')">インク</td>
+                    <td onclick="speakText('インク', 'ja-JP')">inku</td>
+                    <td onclick="speakText('tinta', 'id-ID')">tinta</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('竜巻', 'ja-JP')">竜巻 <br> (たつまき)</td>
+                    <td onclick="speakText('竜巻', 'ja-JP')">tatsumaki</td>
+                    <td onclick="speakText('tornado', 'id-ID')">tornado</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('大学', 'ja-JP')">大学 <br> (だいがく)</td>
+                    <td onclick="speakText('大学', 'ja-JP')">daigaku</td>
+                    <td onclick="speakText('Universitas', 'id-ID')">Universitas</td>
+                </tr>
+                <tr>
+                    <td onclick="speakText('記者', 'ja-JP')">記者 <br> (きしゃ)</td>
+                    <td onclick="speakText('記者', 'ja-JP')">kisha</td>
+                    <td onclick="speakText('wartawan', 'id-ID')">wartawan</td>
+                </tr>
+
+            </table>
+        </article>
+    </div>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('change', function () {
+            const slide = document.querySelector('.slide');
+            if (this.checked) {
+                slide.style.transform = 'translateX(0)';
+                slide.style.boxShadow = '0 0 15px rgba(0,0,0,.5)';
+            } else {
+                slide.style.transform = 'translateX(-180px)';
+                slide.style.boxShadow = 'none';
+            }
+        });
+
+        let speaking = false;
+
+    function speakText(text, lang) {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // Cek apakah synth sedang berbicara.
+        if (!speaking) {
+            synth.speak(utterance);
+
+            // Set speaking menjadi true saat synth sedang berbicara.
+            speaking = true;
+
+            // Setelah selesai berbicara, atur speaking menjadi false lagi.
+            utterance.onend = function () {
+                speaking = false;
+            };
+        }
+    }
+
+    </script>
+</body>
+
+</html>

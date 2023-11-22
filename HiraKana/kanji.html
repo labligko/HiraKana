@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/kanji.css">
+  <link href="/gambar/hirakana full.png" rel="shortcut icon"> 
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+  <title>Kanji</title>
+  
+</head>
+
+<body style="background-color: #D8D9DA;">
+  
+  <label>
+    <input type="checkbox" id="menuToggle">
+    <div class="toggle" for="menuToggle">
+      <span class="top_line common"></span>
+      <span class="middle_line common"></span>
+      <span class="bottom_line common"></span>
+    </div>
+    <div class="slide">
+      <h1>MENU</h1>
+      <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="/bahasa/Hiragana.html"><i class="fas fa-book-open"></i>Hiragana</a></li>
+        <li><a href="/bahasa/Katakana.html"><i class="fas fa-book-open"></i>Katakana</a></li>
+        <li style="background: crimson; pointer-events: none; width: 180px;"><a href="/kanji.html"><i class="fas fa-book-open"></i>Kanji</a></li>
+        <li><a href="/kamus/kamus.html"><i class="fas fa-book"></i>Kotoba</a></li>
+        <li><a href="/translate.html"><i class="fas fa-language"></i>Translate</a></li>
+        <li><a href="/kamus/angka.html"><i class="fas fa-cubes-stacked"></i>Angka</a></li>
+        <li><a href="/kamus/waktu.html"><i class="fas fa-clock"></i>Waktu</a></li>
+        <li><a href="/login.php"><i class="fas fa-gamepad"></i>Quiz</a></li>
+        <li><a href="/contact.html"><i class="fas fa-headset"></i>Contact</a></li>
+        <li><a href="about.html"><i class="fas fa-circle-info"></i>About</a></li>
+      </ul>
+      <div class="brand">
+        <div class="firstname">hira</div>
+        <div class="lastname">kana</div>
+      </div>
+    </div>
+  </label>
+
+  <div class="container">
+    <article>
+        <h2>Kanji</h2>
+        <p class="description">
+            kanji bukanlah gambaran satu huruf melainkan karakter yang memiliki makna dan cara baca tertentu. 
+            Jadi, kamu tidak bisa mencari kanji untuk mewakili atau menggantikan huruf alfabet a-z, 
+            karena sistemnya berbeda.
+        </p>
+        <p class="description">
+            Sebagian besar huruf kanji sendiri ada yang memang berasal dari hanzi Tiongkok, 
+            tetapi ada pula yang asli dari Jepang yang disebut 国字 atau kokuji. 
+            Jika digabung, kanji yang ada di Jepang jumlahnya bisa mencapai 50 ribu kanji, meskipun tidak semuanya digunakan sehari-hari. 
+        </p>
+        <p class="description">
+            Huruf kanji digunakan secara umum dalam kata-kata bahasa Jepang, termasuk untuk hal-hal berikut ini:  <br>
+            <ol>
+                <li>Sebagian besar kata benda, misalnya 山 (yama, “gunung”), 電車 (densha, “kereta listrik”)</li>
+                <li>Bagian utama pada sebagian besar kata kerja dan kata sifat, misalnya 聞 pada 聞く (kiku, “mendengar”) dan 赤 pada 赤い (akai, “merah”). </li>
+                <li>Bagian utama pada sebagian besar kata keterangan, misalnya 速 in 速く (haya-ku, “dengan cepat”) dan 上手に (jouzu-ni, “dengan baik”). </li>
+                <li>Nama orang Jepang dan nama tempat di Jepang, misalnya 前田 (Maeda) dan 京都 (Kyoto)</li>
+            </ol>
+        </p>
+        <h2>Cara Membaca dan Menulis Kanji</h2>
+        <p class="description">
+            Setiap huruf kanji memiliki bentuk dan jumlah goresan yang unik sehingga terlihat sangat berseni dan filosofis. 
+            Menariknya, setiap goresan pada kanji pun memiliki urutan dan arah yang berbeda sehingga mengharuskan kita untuk menulis sesuai dengan urutan dan cara yang benar.
+        </p>
+        <p class="description">
+            Selain itu, cara baca kanji pun terbilang unik karena terdiri dari cara baca Tiongkok yang disebut onyomi dan cara baca Jepang yang disebut kunyomi. 
+            Jadi, satu karakter kanji bisa saja dibaca dengan cara yang berbeda tergantung letak huruf dan konteks penggunaannya.
+        </p>
+        <h2>Contoh Kanji</h2>
+        <table border="1" style="margin-bottom: 20px;">
+            <tr>
+                <th>Kanji</th>
+                <th>Nama kanji / Makna</th>
+                <th>Kunyomi</th>
+                <th>Onyomi</th>
+            </tr>
+            <tr>
+                <td onclick="speakText('日', 'ja-JP')">日</td>
+                <td onclick="speakText('Matahari', 'id-ID')">Matahari</td>
+                <td onclick="speakText('ひ, び, か', 'ja-JP')">hi, -bi, -ka</td>
+                <td onclick="speakText('ニチ, ジツ', 'ja-JP')">nichi, jitsu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('月', 'ja-JP')">月</td>
+                <td onclick="speakText('Bulan', 'id-ID')">Bulan</td>
+                <td onclick="speakText('tsuki', 'ja-JP')">tsuki</td>
+                <td onclick="speakText('げつ,がつ', 'ja-JP')">getsu,gatsu</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('火', 'ja-JP')">火</td>
+                <td onclick="speakText('Api', 'id-ID')">Api</td>
+                <td onclick="speakText('ひ, び, ほ', 'ja-JP')">hi, -bi, ho-</td>
+                <td onclick="speakText('か', 'ja-JP')">ka</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('水', 'ja-JP')">水</td>
+                <td onclick="speakText('Air', 'id-ID')">Air</td>
+                <td onclick="speakText('mizu', 'ja-JP')">mizu</td>
+                <td onclick="speakText('sui', 'ja-JP')">sui</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('木', 'ja-JP')">木</td>
+                <td onclick="speakText('Pohon/Kayu', 'id-ID')">Pohon/Kayu</td>
+                <td onclick="speakText('き, go-', 'ja-JP')">ki, go-</td>
+                <td onclick="speakText('boku, moku', 'ja-JP')">boku, moku</td>
+            </tr>
+            <tr>
+                <td onclick="speakText('金', 'ja-JP')">金</td>
+                <td onclick="speakText('Emas', 'id-ID')">Emas</td>
+                <td onclick="speakText('kane', 'ja-JP')">kane</td>
+                <td onclick="speakText('きん, kon, gon', 'ja-JP')">kin, kon, gon</td>
+            </tr>
+            <tr>
+              <td onclick="speakText('土', 'ja-JP')">土</td>
+              <td onclick="speakText('Tanah', 'id-ID')">Tanah</td>
+              <td onclick="speakText('tsuchi', 'ja-JP')">tsuci</td>
+              <td onclick="speakText('ど, と', 'ja-JP')">do, to</td>
+            </tr>
+        </table>
+            
+        <h3>Contoh penggunaan</h3>
+        <ol>
+            <li>日曜日 (nichiyoubi, “Minggu”)</li>
+            <li>月曜日 (getsuyoubi, “Senin”)</li>
+            <li>火曜日 (kayoubi, “Selasa”)</li>
+            <li>水曜日 (suiyoubi, “Rabu”)</li>
+            <li>木曜日 (mokuyoubi, “Kamis”)</li>
+            <li>金曜日 (kinyoubi, “Jumat”)</li>
+            <li>土曜日 (doyoubi, “Sabtu”)</li>
+        </ol>
+        <p class="description">
+            Nah, itulah pembahasan mengenai kanji bahasa Jepang pada artikel kali ini. 
+            Meskipun sekilas tampak sulit, keunikan kanji menjadi daya tarik tersendiri bagi pelajar bahasa Jepang di seluruh dunia. Pembelajaran kanji pun sudah disesuaikan dengan tingkatan level JLPT yang kamu kuasai, sehingga tidak perlu menghafal secara random. 
+        </p>
+     </article>
+  </div> 
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('change', function() {
+      const slide = document.querySelector('.slide');
+      if (this.checked) {
+        slide.style.transform = 'translateX(0)';
+        slide.style.boxShadow = '0 0 15px rgba(0,0,0,.5)';
+      } else {
+        slide.style.transform = 'translateX(-180px)';
+        slide.style.boxShadow = 'none';
+      }
+    });
+
+    let speaking = false;
+
+    function speakText(text, lang) {
+        const synth = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = lang;
+
+        // Cek apakah synth sedang berbicara.
+        if (!speaking) {
+            synth.speak(utterance);
+
+            // Set speaking menjadi true saat synth sedang berbicara.
+            speaking = true;
+
+            // Setelah selesai berbicara, atur speaking menjadi false lagi.
+            utterance.onend = function () {
+                speaking = false;
+            };
+        }
+    }
+
+  </script>
+</body>
+</html>
